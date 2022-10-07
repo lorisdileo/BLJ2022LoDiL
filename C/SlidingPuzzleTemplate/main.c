@@ -28,27 +28,43 @@ int main(void) {
         printField(FIELD_SIZE, field);
         scanf("%d", &input);
          
-        if(input = 1){
-            swapValues(field[x][y], field[x][y + 1]);
-            y += 1
+        if(input == 1){
+            if(y == 3){
+               printf("Deine Eingabe kann nicht ausgeührt werden, geben Sie einen anderen Befehl ein."); 
+            }
+            else{swapValues(&field[x][y], &field[x][y + 1]);
+            y += 1;
+            }
         }
-        else if(input = 2){
-            swapValues(field[x][y], field[x + 1][y]);
-            x += 1
+        else if(input == 2){
+            if(x == 3){
+               printf("Deine Eingabe kann nicht ausgeührt werden, geben Sie einen anderen Befehl ein."); 
+            }
+            else{swapValues(&field[x][y], &field[x + 1][y]);
+            x += 1;
+            }
         }
-        else if(input = 3){
-            swapValues(field[x][y], field[x - 1][y]);
-            x -= 1
+        else if(input == 3){
+            if(x == 0){
+               printf("Deine Eingabe kann nicht ausgeührt werden, geben Sie einen anderen Befehl ein."); 
+            }
+            else{swapValues(&field[x][y], &field[x - 1][y]);
+            x -= 1;
+            }
         }
-        else if(input = 4){
-            swapValues(field[x][y], field[x][y - 1]);
-            y -= 1
+        else if(input == 4){
+            if(y == 0){
+               printf("Deine Eingabe kann nicht ausgeührt werden, geben Sie einen anderen Befehl ein."); 
+            }
+            else{swapValues(&field[x][y], &field[x][y - 1]);
+            y -= 1;
+            }
         }
-      
-        // TODO: Implement the rules for the sliding puzzle. In other words, 
-        // swap neighboured values (horizontally or vertically) in the 2D array 
-        // based on user input, but only if the move is legal (bounds checking).
-
+        else if(input > 4){
+            printf("Gib eine gueltige untenstehende Zahl ein!!");
+        }
     } while (input != 0);
+        printf("Vielen Dank, dass du mein Spiel gespielt hast.\n");
+    system("pause");
     return 0;
 }
