@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Probezeitbericht</title>
+</head>
+<body>
+    <h1>Probezeitbericht</h1>
+    <h1 style="font-size: 15px; text-align: right;">
+    von Loris Di Leo</h1>
+    
+    <form action="/probezeitbericht.php" method="ONLINE">
+        <li><label for="firstlast">Lernender:</label>
+        <input type="text" name="fullname" id="firstlast"></li>
+        <br>
+        
+        <li><label for="Lehrberuf">Lehrberuf:</label>
+            <select name = "dropdown">
+                <option value = "applikationsentwickler" selected>Applikationsentwickler</option>
+                <option value = "plattformentwickler">Plattformentwickler</option>
+                <option value = "mediamatiker">Mediamatiker</option>
+                <option value = "ict-fachmann">ICT-Fachmann</option>
+             </select>
+            </li>
+        <br>
+        
+        <fieldset>
+        <legend>Berufsmaturität</legend>
+        <p><input type="radio" name="berufsmaturität" value="mit bms"> mit BMS
+           <input type="radio" name="berufsmaturität" value="ohne bms"> ohne BMS
+        </p>
+        </fieldset>
+        </form>
+        <br>
+        
+        <li><label for="lehrbeginn">Lerhbeginn:</label>
+        <input type="date" id="lehrbeginn" name="lehrbeginn"></li>
+        <br>
+        
+        <li><label for="firstlast">Berufsbildner:</label>
+        <input type="text" name="fullname" id="firstlast"></li>
+
+        <br>
+        <h1 style="font-size: 18px;">
+        Gesamteindruck</h1>  
+        <textarea rows="6" cols="50" name="comment" form="usrform">  
+        Enter text here...</textarea>
+        
+        <br>
+        <h1 style="font-size: 18px;">
+            Beurteilung</h1>
+        
+        <hr {width: 15px;}>
+        <div> <font size = 4>Fachkompetenz</div></font>
+        Fertigkeiten, Kenntnisse, Quantität, Qualität etc.
+        <div><input type = "checkbox"> sehr gut</div>
+        <div><input type = "checkbox"> gut</div>
+        <div><input type = "checkbox"> genügend</div>
+        <div><input type = "checkbox"> ungenügend</div>
+
+        <hr {width: 15px;}>
+        <div> <font size = 4>Methodenkompetenz</div></font>
+        Lernfähigkeit, Arbeitsmethodik, arbeitssicherheit, Kreativität etc.
+        <div><input type = "checkbox"> sehr gut</div>
+        <div><input type = "checkbox"> gut</div>
+        <div><input type = "checkbox"> genügend</div>
+        <div><input type = "checkbox"> ungenügend</div>
+
+        <hr {width: 15px;}>
+        <div> <font size = 4>Sozialkompetenz</div></font>
+        Teamfähigkeit, Firmenbezug, umweltgerechtes Verhalten etc.
+        <div><input type = "checkbox"> sehr gut</div>
+        <div><input type = "checkbox"> gut</div>
+        <div><input type = "checkbox"> genügend</div>
+        <div><input type = "checkbox"> ungenügend</div>
+
+        <hr {width: 15px;}>
+        <div> <font size = 4>Selbstkompetenzen</div></font>
+        Selbstständigkeit, Leistungsbereitschaft, Flexibilität etc.
+        <div><input type = "checkbox"> sehr gut</div>
+        <div><input type = "checkbox"> gut</div>
+        <div><input type = "checkbox"> genügend</div>
+        <div><input type = "checkbox"> ungenügend</div>
+        <hr {width: 15px;}>
+        <br>
+
+        <h1 style="font-size: 18px;">
+            Fazit</h1>
+            <li><label for="probezeit">Probezeit:</label>
+                <select name = "dropdown">
+                    <option value = "bestanden" selected>bestanden</option>
+                    <option value = "verlängert">verlängert</option>
+                    <option value = "nicht bestanden">nicht bestanden</option>
+                 </select>
+                </li>
+            <br>
+        
+        <h1 style="font-size: 18px;">
+        Bemerkung</h1>
+        <textarea rows="6" cols="50" name="comment" form="usrform">  
+        Enter text here...</textarea>
+        
+        <div><input type="submit" value="Speichern"></div>
+    </body>
+</html>
