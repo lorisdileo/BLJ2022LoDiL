@@ -1,0 +1,30 @@
+*{
+    color: #2b7da1;
+}
+
+#titel {
+    font-size: 20px;
+    vertical-align: left;
+}
+
+#ferienanspruch {
+    font-size: 15px; 
+    font-display: bottom;
+    
+}
+
+.input {
+    color: #2b7da1;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1;
+    width: 180px;
+
+}
+
+.background {
+    background-color: #b2d0dd;
+}
+
+input:hover {
+    color: black;
+}

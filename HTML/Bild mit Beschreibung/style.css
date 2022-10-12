@@ -1,0 +1,22 @@
+#bild {
+    width: 900px;
+    height: 500px;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+
+div {
+    font-size: 0.9cm;
+    color: aliceblue;   
+    background-color: black;
+    opacity: 0.5;
+    width: 23.8cm;
+    height: 100px;
+    left: 0;
+    top: 0;
+    position: absolute;
+
+}
+
+
