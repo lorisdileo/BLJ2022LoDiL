@@ -4,7 +4,7 @@ int main(){
     int spalte;
     int reihen;
     
-    printf("Wilkommen zur Tabelle generierung.\n");
+    printf("\nWilkommen zur Tabelle generierung.\n");
 
     printf("Geben Sie die Anzahl Spalten an. \n");
     scanf("%d", &spalte);
@@ -12,28 +12,30 @@ int main(){
     printf("Geben Sie die Anzahl Reihen ohne den Header an. \n");
     scanf("%d", &reihen);
 
-    printf("<tr>\n");
+    printf("<table>");
+    printf("\n\t<tr>\n");
     
 
 for (int i = 0; i < spalte; i++)
 {
-    printf("\t<th></th>\n"); 
+    printf("\t\t<th></th>\n"); 
 
 }
 
-printf("</tr>");
+printf("\t</tr>");
 
 for (int i = 0; i < reihen; i++)
 {
-    printf("\n<tr>\n");
+    printf("\n\t<tr>\n");
 
     for (int i = 0; i < spalte; i++)
     {
-        printf("\t<td></td>\n");
+        printf("\t\t<td></td>\n");
     }
 
-     printf("</tr>\n"); 
+     printf("\t</tr>\n"); 
 }
+printf("</table>");
   
     return 0;
 }
