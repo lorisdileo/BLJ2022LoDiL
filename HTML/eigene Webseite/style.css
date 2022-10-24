@@ -11,9 +11,22 @@ h1{
 
 .link{
     text-align: center;
+    font-size: 150%;
 }
 
-.login-link{
-    text-align: right;
-    width: 100%;
+#bild{
+    width: 300px;
+    height: 400px;
+    left: 0;
+    top: 25;
+    position: absolute;
 }
+
+#bild1{
+    width: 300px;
+    height: 400px;
+    right: 0;
+    top: 25;
+    position: absolute;
+}
+
