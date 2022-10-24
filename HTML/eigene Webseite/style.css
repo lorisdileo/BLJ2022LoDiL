@@ -1,0 +1,19 @@
+h1{
+    text-align: center;
+    width: 100%;
+    font-size: 500%;
+}
+
+.search{
+    text-align: center;
+    width: 100%;
+}
+
+.link{
+    text-align: center;
+}
+
+.login-link{
+    text-align: right;
+    width: 100%;
+}
