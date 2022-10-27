@@ -65,6 +65,6 @@ int main(void) {
         }
     } while (input != 0);
         printf("Vielen Dank, dass du mein Spiel gespielt hast.\n");
-    system("pause");
+    
     return 0;
 }
