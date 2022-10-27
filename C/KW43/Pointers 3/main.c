@@ -45,17 +45,6 @@ int main() {
     printInfo(info);
     printInfo(info2);
     printInfo(info3);    
-   
-   
-   
-   
-   
-   
-    /*TInfo *p_info = &info;
-    printf("Name: %c \n", (*p_info).name);
-    printf("Name: %c \n", p_info->name);*/
-
- 
 
     return 0;
 }
