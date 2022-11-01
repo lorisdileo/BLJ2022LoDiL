@@ -16,12 +16,101 @@ int main(int argc, char** argv){
     }
 
     int userInput = 0;
-    printf("Geben Sie eine Uhrzeit ein.(In Minutenein)\n");
+    printf("Geben Sie eine Anzahl Stunden ein.(00-23\n");
     scanf("%d", &userInput);
 
     clock[8][8] = 0;
 
     switch (userInput)
+    {
+    case 00:
+        clock[8][8] = 1;
+        clock[8][9] = 1;
+        clock[8][10] = 1;
+        clock[8][11] = 1;
+        clock[8][12] = 1;
+        clock[8][13] = 1;
+        break;
+
+    case 03:
+        clock[8][8] = 1;
+        clock[9][8] = 1;
+        clock[10][8] = 1;
+        clock[11][8] = 1;
+        clock[12][8] = 1;
+        clock[13][8] = 1;
+        clock[14][8] = 1;
+        clock[15][8] = 1;
+
+        break;
+
+    case 06:
+        clock[8][8] = 1;
+        clock[8][7] = 1;
+        clock[8][6] = 1;
+        clock[8][5] = 1;
+        clock[8][4] = 1;
+        clock[8][3] = 1;
+        break;
+
+    case 09:
+        clock[8][8] = 1;
+        clock[7][8] = 1;
+        clock[6][8] = 1;
+        clock[5][8] = 1;
+        clock[4][8] = 1;
+        clock[3][8] = 1;
+        clock[2][8] = 1;
+        clock[1][8] = 1;
+        break;
+
+    case 12:
+        clock[8][8] = 1;
+        clock[8][9] = 1;
+        clock[8][10] = 1;
+        clock[8][11] = 1;
+        clock[8][12] = 1;
+        clock[8][13] = 1;
+        break;
+
+    case 15:
+        clock[8][8] = 1;
+        clock[9][8] = 1;
+        clock[10][8] = 1;
+        clock[11][8] = 1;
+        clock[12][8] = 1;
+        clock[13][8] = 1;
+        clock[14][8] = 1;
+        clock[15][8] = 1;
+
+        break;
+
+    case 18:
+        clock[8][8] = 1;
+        clock[8][7] = 1;
+        clock[8][6] = 1;
+        clock[8][5] = 1;
+        clock[8][4] = 1;
+        clock[8][3] = 1;
+        break;
+
+    case 21:
+        clock[8][8] = 1;
+        clock[7][8] = 1;
+        clock[6][8] = 1;
+        clock[5][8] = 1;
+        clock[4][8] = 1;
+        clock[3][8] = 1;
+        clock[2][8] = 1;
+        clock[1][8] = 1;
+        break;
+    }
+
+    int userInput2 = 0;
+        printf("Geben Sie die Minuten Anzahl ein.\n");
+        scanf("%d", &userInput2);
+
+            switch (userInput2)
     {
     case 15:
         clock[8][8] = 1;
