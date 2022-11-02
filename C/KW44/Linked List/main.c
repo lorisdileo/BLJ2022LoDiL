@@ -3,31 +3,32 @@
 
 typedef struct Node
 {
-    int data
-    struct Node *next
+    char data;
+    struct Node *next;
 }TNode;
 
+/*void printList(TNode *head) {
+
+    printf("%s\n", head -> data);
+    do {
+        head = head -> next;
+        printf("%c\n", head -> data);
+    } while (head -> next != NULL);
+}*/
+
 int main() {
+    TNode *list = (TNode *) malloc(sizeof(TNode));
 
-TNode *list = NULL;
+    list -> data = 'A';
 
-list = (TNode*)malloc(sizeof(TNode));
+    list -> next = (TNode *) malloc(sizeof(TNode));
 
-list -> next = NULL;
+    list -> next -> data = 'C';
 
-list -> data = (TNode*)malloc(sizeof(TNode));
+    list -> next -> next = NULL;
 
-list -> data *c = 'A';
+    printf("%c\n", list -> data);
+    printf("%c\n", list -> next -> data);
 
-list -> next = (TNode *)malloc(sizeof(TNode));
-
-list -> next -> next = NULL;
-
-list -> next -> data = (TNode *)malloc(sizeof(TNode));
-
-list -> next -> data -> c = 'C';
-
-
-
-
+    return 0;
 }
