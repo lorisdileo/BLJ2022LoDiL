@@ -3,51 +3,50 @@
 
 typedef struct Node
 {
-    char data;
+    int data;
     struct Node *next;
 }TNode;
 
-/*void printList(TNode *head) {
+void printList(TNode *head) {
 
     printf("%s\n", head -> data);
     do {
         head = head -> next;
         printf("%c\n", head -> data);
     } while (head -> next != NULL);
-}*/
+}
 
-void printNode(TNode * head) {
-    TNode * list = head;
-
-    while (list != NULL) {
-        printf("%c\n", list -> data);
-        list = list -> next;
-    }
+void anyList(TNode *head){
+    TNode *banane = head;
+    
+    while (banane != NULL)
+    {
+        printf("%d\n", banane -> data);
+        banane = banane -> next;    
+    }    
 }
 
 int main() {
     
-    TNode *head;
+    TNode *head = (TNode *) malloc(sizeof(TNode));
+    TNode *list1 = (TNode *) malloc(sizeof(TNode));
+    TNode *list2 = (TNode *) malloc(sizeof(TNode));
+    TNode *list3 = (TNode *) malloc(sizeof(TNode));
 
-    TNode *list = (TNode *) malloc(sizeof(TNode));
+    head -> next = list1;
+    list1 -> next = list2;
+    list2 -> next = list3;
+    list3 -> next = NULL;
 
-    list -> data = 'A';
+    head -> data = 0;
+    list1 -> data = 3;
+    list2 -> data = 8;
+    list3 -> data = 6;
 
-    list -> next = (TNode *) malloc(sizeof(TNode));
+    anyList(head);
 
-    list -> next -> data = 'C';
-
-    list -> next -> next =  (TNode *) malloc(sizeof(TNode));
-
-    list -> next -> next -> data = 'E';
-
-    list -> next -> next -> next = NULL;
-
-    head = list;
-    printNode(head);
     return 0;
 }
-
 
 /*node delete_right(node list){
 	node tmp   = list->next;
