@@ -7,15 +7,6 @@ typedef struct Node
     struct Node *next;
 }TNode;
 
-void printList(TNode *head) {
-
-    printf("%s\n", head -> data);
-    do {
-        head = head -> next;
-        printf("%c\n", head -> data);
-    } while (head -> next != NULL);
-}
-
 void anyList(TNode *head){
     TNode *banane = head;
     
@@ -26,12 +17,17 @@ void anyList(TNode *head){
     }    
 }
 
+TNode *createNode(){
+    TNode *newNode = (TNode *) malloc(sizeof(TNode));
+    return newNode;
+}
+
 int main() {
     
-    TNode *head = (TNode *) malloc(sizeof(TNode));
-    TNode *list1 = (TNode *) malloc(sizeof(TNode));
-    TNode *list2 = (TNode *) malloc(sizeof(TNode));
-    TNode *list3 = (TNode *) malloc(sizeof(TNode));
+    TNode *head = createNode();
+    TNode *list1 = createNode(); 
+    TNode *list2 = createNode();
+    TNode *list3 = createNode();
 
     head -> next = list1;
     list1 -> next = list2;
