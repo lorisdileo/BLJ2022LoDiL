@@ -16,7 +16,19 @@ typedef struct Node
     } while (head -> next != NULL);
 }*/
 
+void printNode(TNode * head) {
+    TNode * list = head;
+
+    while (list != NULL) {
+        printf("%c\n", list -> data);
+        list = list -> next;
+    }
+}
+
 int main() {
+    
+    TNode *head;
+
     TNode *list = (TNode *) malloc(sizeof(TNode));
 
     list -> data = 'A';
@@ -25,10 +37,21 @@ int main() {
 
     list -> next -> data = 'C';
 
-    list -> next -> next = NULL;
+    list -> next -> next =  (TNode *) malloc(sizeof(TNode));
 
-    printf("%c\n", list -> data);
-    printf("%c\n", list -> next -> data);
+    list -> next -> next -> data = 'E';
 
+    list -> next -> next -> next = NULL;
+
+    head = list;
+    printNode(head);
     return 0;
 }
+
+
+/*node delete_right(node list){
+	node tmp   = list->next;
+	list->next = list->next->next;
+	free(tmp);
+	return list;
+}*/
