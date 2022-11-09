@@ -8,4 +8,3 @@ public class Main {
         System.out.println("Binary: " + Integer.toBinaryString(1000));
     }
 }
-
