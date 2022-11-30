@@ -1,17 +1,35 @@
-public class person {
-    private String name;
+public class Person {
+    private String vorName;
+
+    private String nachName;
     private String favoriteColor;
 
-    public person(String name) {
-        this.name = name;
+    public Person( ) {
+
+    }
+
+    public void setVorName(String vorName) {
+        this.vorName = vorName;
+    }
+
+    public void setNachName(String nachName) {
+        this.nachName = nachName;
+    }
+
+    public Person(String nachName) {
+        this.nachName = nachName;
     }
 
     public void presentYourself() {
-        System.out.println("Hallo, ich bin " + name + " und meine Lieblingsfarbe ist " + favoriteColor);
+        System.out.println("Hallo, ich bin " + vorName + " " + nachName + " und meine Lieblingsfarbe ist " + favoriteColor);
     }
 
-    public String getName() {
-        return name;
+    public String getVorName() {
+        return vorName;
+    }
+
+    public String getNachName() {
+        return nachName;
     }
 
     public String getFavoriteColor() {

@@ -21,7 +21,7 @@ public class Main {
 
             switch (userEingabe) {
                 case 0:
-                    System.out.println("Du hast das Programm Beendet");
+                    System.out.println("Vielen Dank, das du mein Programm verewendet hast.");
                     System.exit(0);
                     break;
                 case 1:
