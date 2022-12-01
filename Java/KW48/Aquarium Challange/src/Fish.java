@@ -1,5 +1,3 @@
-package javaProjekt;
-
 public class Fish {
 
 

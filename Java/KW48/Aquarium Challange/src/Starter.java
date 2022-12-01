@@ -1,5 +1,3 @@
-package javaProjekt;
-
 import java.util.Scanner;
 
 public class Starter {
@@ -65,6 +63,14 @@ public class Starter {
                     }
                 }
                 case 4 -> {
+                    System.out.println("Welchen Fisch willst du bewegen?");
+                    for (Fish fish : tank.getFishies()) {
+                        System.out.println("- [" + fish.getName() + "]");
+                    }
+                    String inputMove = scan.next();
+                    tank.printAquarium();
+                }
+                case 5 -> {
                     isRunning = false;
                 }
             }
