@@ -19,5 +19,15 @@ public class Fish {
         this.y = y;
     }
 
+    public int getX() {
+        return x;
+    }
 
+    public int getY() {
+        return y;
+    }
+
+    public String getName() {
+        return name;
+    }
 }
