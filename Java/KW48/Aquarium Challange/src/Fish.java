@@ -3,9 +3,10 @@ public class Fish {
 
     private String name;
     private Integer waterTyp;
-    private int x, y;
+    private int x;
+    private int y;
 
-    public Fish(String name, Integer waterTyp, int x, int y) {
+    public Fish(String name, Integer waterTyp, int x) {
         this.name = name;
         this.waterTyp = waterTyp;
         this.x = x;

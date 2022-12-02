@@ -32,43 +32,21 @@ public class Starter {
             System.out.println("[1] Fisch hinzufügen");
             System.out.println("[2] Fisch entfernen");
             System.out.println("[3] Fisch(e) anzeigen");
-            System.out.println("[4] Programm beenden");
+            System.out.println("[4] Fisch bewegen");
+            System.out.println("[5] Programm beenden");
             int userInput1 = scan.nextInt();
             switch (userInput1) {
                 case 1 -> {
-                    System.out.println("Wie soll der Fisch heissen?");
-                    String name = scan.next();
-                    System.out.println("Geben Sie die X-Koordinate ein.");
-                    int userInputX = scan.nextInt();
-                    System.out.println("Geben Sie die Y-Koordinate ein.");
-                    int userInputY = scan.nextInt();
-                    tank.addFish(userInputX, userInputY, name, waterTyp);
-                    tank.printAquarium();
+                    tank.fishHinzufuegen();
                 }
                 case 2 -> {
-                    System.out.println("Welchen Fisch willst du entfernen?");
-                    for (Fish fish : tank.getFishies()) {
-                        System.out.println("- [" + fish.getName() + "]");
-                    }
-                    String name = scan.next();
-                    tank.removeFish(name);
-                    tank.printAquarium();
-                    System.out.println("*********************************");
+                    tank.fishEnfernen();
                 }
                 case 3 -> {
-                    System.out.println("Das Aquarium ist mit Süsswasser gefüllt.");
-                    tank.printAquarium();
-                    for (Fish fish : tank.getFishies()) {
-                        System.out.println("- [" + fish.getName() + "] an der Koordinate: [" + fish.getX() + "][" + fish.getY() + "]");
-                    }
+                    tank.fishAnzeigen();
                 }
                 case 4 -> {
-                    System.out.println("Welchen Fisch willst du bewegen?");
-                    for (Fish fish : tank.getFishies()) {
-                        System.out.println("- [" + fish.getName() + "]");
-                    }
-                    String inputMove = scan.next();
-                    tank.printAquarium();
+                    tank.fishBewegen();
                 }
                 case 5 -> {
                     isRunning = false;
