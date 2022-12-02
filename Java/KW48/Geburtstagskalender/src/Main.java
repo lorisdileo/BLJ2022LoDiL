@@ -2,14 +2,14 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        Person[] persArr = new Person[52];
-
+        Person[] persArr = new Person[40];
         initPersonArray(persArr);
+        Person.dayRow(persArr);
+        Person.printBd(persArr);
     }
 
     public static void initPersonArray(Person[] persArr) {
         int i = 0;
-
         persArr[i++] = new Person(2007, 5, 1, "Marko");
         persArr[i++] = new Person(2006, 11, 23, "Dylan");
         persArr[i++] = new Person(2006, 7, 23, "Samuel");
@@ -51,5 +51,4 @@ public class Main {
         persArr[i++] = new Person(2005, 3, 4, "Darko");
         persArr[i++] = new Person(2006, 4, 7, "Dina");
     }
-
 }
