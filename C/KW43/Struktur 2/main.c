@@ -2,7 +2,7 @@
 #include <string.h>
 #include <stdlib.h>
 
-#define NUM 1000000
+#define NUM 100000
  
 typedef struct Info {
     char price[20];

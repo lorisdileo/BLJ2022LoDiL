@@ -32,13 +32,38 @@ int main(int argc, char** argv){
         clock[4][8] = 1;
         clock[3][8] = 1;
         break;
+    
+    case 1:
+        clock[8][8] = 1;
+        clock[6][9] = 1;
+        clock[4][10] = 1;
+        break;
+
+    case 2:
+        clock[8][8] = 1;
+        clock[7][9] = 1;
+        clock[6][10] = 1;
+        clock[5][11] = 1;
+        break;
 
     case 3:
         clock[8][8] = 1;
         clock[8][9] = 1;
         clock[8][10] = 1;
         clock[8][11] = 1;
+        break;
 
+    case 4:
+        clock[8][8] = 1;
+        clock[9][9] = 1;
+        clock[10][10] = 1;
+        clock[11][11] = 1;
+        break;
+
+    case 5:
+        clock[8][8] = 1;
+        clock[10][9] = 1;
+        clock[12][10] = 1;
         break;
 
     case 6:
@@ -66,12 +91,37 @@ int main(int argc, char** argv){
         clock[3][8] = 1;
         break;
 
+    case 13:
+        clock[8][8] = 1;
+        clock[6][9] = 1;
+        clock[4][10] = 1;
+        break;
+        
+    case 14:
+        clock[8][8] = 1;
+        clock[7][9] = 1;
+        clock[6][10] = 1;
+        clock[5][11] = 1;
+        break;
+
     case 15:
         clock[8][8] = 1;
         clock[8][9] = 1;
         clock[8][10] = 1;
         clock[8][11] = 1;
+        break;
 
+    case 16:
+        clock[8][8] = 1;
+        clock[9][9] = 1;
+        clock[10][10] = 1;
+        clock[11][11] = 1;
+        break;
+
+    case 17:
+        clock[8][8] = 1;
+        clock[10][9] = 1;
+        clock[12][10] = 1;
         break;
 
     case 18:
@@ -175,6 +225,7 @@ int main(int argc, char** argv){
 
             
         };*/
+
 
     for (int i = 0; i < FIELD_SIZE; i++) {
         for (int j = 0; j < FIELD_SIZE; ++j) {

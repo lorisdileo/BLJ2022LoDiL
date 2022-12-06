@@ -1,3 +1,4 @@
+/*von Luis Küng*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -104,7 +105,7 @@ int main() {
     printf("The fewer tries you need, the better you are\n");
     printf("---------------------------------------------\n\n");
 
-    printf("Choose difficulty:\tEasy [1]\tHard [2]\tCustom [3]\n--> ");
+    printf("Choose difficulty:\tEasy [1]\tHard [2]\tCustom (infinit) [3]\n--> ");
     scanf("%d", &difficulty);
 
     gameInput(difficulty);
