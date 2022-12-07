@@ -1,18 +1,34 @@
 import java.io.*;
-import java.util.Scanner;
+import java.security.spec.RSAOtherPrimeInfo;
+import java.util.ArrayList;
 import java.io.FileNotFoundException;
+import java.util.ArrayList;
 
 public class Main {
 
-    public static void main(String[] args) throws FileNotFoundException {
-        Person[] persArr = new Person[40];
+    public static void main(String[] args) {
+        String path = "src/Personen_Aufgabe_2022-2023_2.csv";//"src/Personen_Aufgabe_2022-2023_(csv).csv";
+        String line = "";
+        ArrayList<Person> persArr = new ArrayList<>();
 
-        File getCSVFiles = new File("src/Personen_Aufgabe_2022-2023_(csv).csv");
-        Scanner scan = new Scanner(getCSVFiles);
-        while (scan.hasNext()) {
-            System.out.println(scan.nextLine());
+        System.out.println("2022 haben Geburtstag im");
+
+        try {
+            BufferedReader br = new BufferedReader(new FileReader(path));
+
+            while ((line = br.readLine()) != null) {
+                String[] values = line.split(",");
+                int year = Integer.parseInt(values[0]);
+                int month = Integer.parseInt(values[1]);
+                int day = Integer.parseInt(values[2]);
+                String name = values[3];
+                Person person = new Person(year, month, day, name);
+                persArr.add(person);
+            }
+
+        } catch (IOException e) {
+            e.printStackTrace();
         }
-        scan.close();
         Person.dayRow(persArr);
         Person.printBd(persArr);
     }
