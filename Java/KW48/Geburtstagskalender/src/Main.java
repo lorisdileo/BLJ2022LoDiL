@@ -3,6 +3,7 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
         Person[] persArr = new Person[40];
+        System.out.println("2022 haben Geburtstag im");
         initPersonArray(persArr);
         Person.dayRow(persArr);
         Person.printBd(persArr);
