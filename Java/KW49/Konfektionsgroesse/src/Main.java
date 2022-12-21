@@ -11,8 +11,9 @@ public class Main {
 
         int geschlecht = scan.nextInt();
 
-        switch (true){
-            case -> 1 {
+        switch (geschlecht){
+            case -> 1{
+            } {
 
             }
              case -> 2 {
