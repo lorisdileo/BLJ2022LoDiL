@@ -5,10 +5,10 @@ public class wordl {
     private int[]  anzahlVersuche = new int[6];
 
     public wordl(String newID) {
-        ID = newID;
-        gespielteSpiele = 0;
-        win = 0;
-        anzahlVersuche = new int[] {0, 0, 0, 0, 0, 0};
+        this.ID = newID;
+        this.gespielteSpiele = 0;
+        this.win = 0;
+        this.anzahlVersuche = new int[] {0, 0, 0, 0, 0, 0};
     }
     public String getID() {
         return ID;

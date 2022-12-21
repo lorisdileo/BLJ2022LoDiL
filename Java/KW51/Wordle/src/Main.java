@@ -16,7 +16,8 @@ public class Main {
 
         System.out.println("Bitte geben Sie Ihr Name ein, damit wir Sie als Spieler registrieren können");
         String playerName = scan.nextLine();
-        wordl User1 = new wordl(playerName);
+        String toUpperCase = playerName.toUpperCase();
+        wordl User1 = new wordl(toUpperCase);
         System.out.println("x: falscher Buchstbe");
         System.out.println("@: richtiger Buchstabe, aber an der falschen Position");
         System.out.println("*: richtiger Buchstabe und richtige Position");
@@ -33,20 +34,22 @@ public class Main {
 
         String nochmalsSpielen = "Y";
 
-        for(int i = 0; i < 5; i++){
+        for (int i = 0; i < 5; i++) {
             wortErraten[i] = wort.substring(i, i + 1);
         }
         spielfeld(spiel);
         int rounds = 0;
 
-        while ((nochmalsSpielen.equals("Y"))|| (nochmalsSpielen.equals("y"))){
+        System.out.println(wort);
+
+        while ((nochmalsSpielen.equals("Y")) || (nochmalsSpielen.equals("y"))) {
             clearGameArray(spiel);
             boolean win = false;
-            int  nochVersuche = 6;
+            int nochVersuche = 6;
             int jetztigeReihe = 0;
-            rounds +=1;
+            rounds += 1;
 
-            while(!win && nochVersuche > 0){
+            while (!win && nochVersuche > 0) {
                 System.out.print("Runde " + rounds + " Bitte geben Sie Ihre Vermutung ein: ");
                 String wahl = scan.next();
                 while (wahl.length() != 5) {
@@ -55,73 +58,73 @@ public class Main {
                     wahl = scan.next();
                 }
                 String wahlUpperCase = wahl.toUpperCase();
-                for(int i = 0; i < wahlUpperCase.length(); i++){
-                    for(int j = 0; j < alfabet.length; j++){
-                        if(wahlUpperCase.substring(i, i+1).equals(alfabet[j])){
+                for (int i = 0; i < wahlUpperCase.length(); i++) {
+                    for (int j = 0; j < alfabet.length; j++) {
+                        if (wahlUpperCase.substring(i, i + 1).equals(alfabet[j])) {
                             alfabet[j] = "#";
                         }
                     }
                 }
 
-                for(int col = 0; col < 5; col++){
+                for (int col = 0; col < 5; col++) {
                     spiel[jetztigeReihe][col] = wahlUpperCase.substring(col, col + 1);
-                    for(int x = 0; x < wortErraten.length; x++){
-                        if(spiel[jetztigeReihe][col].equals(wortErraten[col])){
-                            spiel[jetztigeReihe + 1][col] = "*";
-                        }
-                        else if(spiel[jetztigeReihe][col].equals(wortErraten[x])){
-                            spiel[jetztigeReihe + 1][col] = "@";
-                        }
+                }
+                for (int x = 0; x < wortErraten.length; x++) {
+                    if (spiel[jetztigeReihe][x].equals(wortErraten[x])) {
+                        spiel[jetztigeReihe + 1][x] = "*";
+                    } else if (spiel[jetztigeReihe][x] == (wortErraten[x])) {
+                        spiel[jetztigeReihe + 1][x] = "@";
                     }
-                    if(spiel[jetztigeReihe + 1][col].equals(" ")){
-                        spiel[jetztigeReihe + 1][col] = "x";
+
+                    if (spiel[jetztigeReihe + 1][x] == (" ")) {
+                        spiel[jetztigeReihe + 1][x] = "x";
                     }
                 }
+
                 jetztigeReihe++;
                 nochVersuche--;
 
                 spielfeld(spiel);
 
                 win = gewinnPrüfen(spiel, jetztigeReihe);
-                if(win){
+                if (win) {
                     System.out.println("Du hast das Wort rausgefunden!!");
                     System.out.println("Du hast dafuer " + (6 - nochVersuche) + " Versuche gebraucht.");
 
                     User1.setWin();
                     User1.setAnzahlVersuche(6 - nochVersuche);
 
-                }
-                else {
+                } else {
                     jetztigeReihe++;
                 }
 
                 System.out.print("Das sind die Buchstaben die du noch nicht verwendet hast: ");
-                for(int i = 0; i < alfabet.length; i++){
+                for (int i = 0; i < alfabet.length; i++) {
                     System.out.print(alfabet[i] + " ");
                 }
                 System.out.println();
             }
 
-            if(win == false){
+            if (win == false) {
                 System.out.println("Du hast keine Versuche mehr.");
             }
             System.out.println("Willst du noch mals spielen? Y oder N:");
             nochmalsSpielen = scan.next();
-            if(nochmalsSpielen.equals("Y")){
+            if (nochmalsSpielen.equals("Y")) {
 
                 geheimWort wort2 = new geheimWort();
                 wort = wort2.getGeheimWort();
 
-                if((wort.equals("ZZZZZ"))){
+                if ((wort.equals("ZZZZZ"))) {
                     System.out.println("NO MORE WORDS LEFT");
 
                     User1.setGespielteSpiele();
 
 
                     break;
-                }else{
+                } else {
                     clearGameArray(spiel);
-                    for(int i = 0; i < 5; i++){
+                    for (int i = 0; i < 5; i++) {
                         wortErraten[i] = wort.substring(i, i + 1);
                     }
                 }
@@ -133,32 +136,32 @@ public class Main {
         System.out.println("Anzahl Versuche" + User1);
     }
 
-    public static void clearGameArray(String[][] tempSpiel){
-        for(int row = 0; row < tempSpiel.length; row++){
-            for(int col = 0; col < tempSpiel[row].length; col++){
+    public static void clearGameArray(String[][] tempSpiel) {
+        for (int row = 0; row < tempSpiel.length; row++) {
+            for (int col = 0; col < tempSpiel[row].length; col++) {
                 tempSpiel[row][col] = " ";
             }
         }
     }
 
-    public static void spielfeld(String[][] spiel){
-        for(int i = 0; i < spiel.length; i++){
+    public static void spielfeld(String[][] spiel) {
+        for (int i = 0; i < spiel.length; i++) {
             System.out.print("| ");
-            for(int j = 0; j < spiel[0].length; j++){
+            for (int j = 0; j < spiel[0].length; j++) {
                 System.out.print(spiel[i][j]);
             }
             System.out.println(" |");
         }
     }
 
-    public static boolean gewinnPrüfen(String[][] g, int r){
+    public static boolean gewinnPrüfen(String[][] g, int r) {
         int zählen = 0;
-        for(int col = 0; col < g[0].length; col++){
-            if(g[r][col].equals("*")){
+        for (int col = 0; col < g[0].length; col++) {
+            if (g[r][col].equals("*")) {
                 zählen++;
             }
         }
-        if(zählen == 5){
+        if (zählen == 5) {
             return true;
         }
         return false;

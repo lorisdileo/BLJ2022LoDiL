@@ -1,28 +1,31 @@
+import java.util.Random;
+
 public class geheimWort {
     private boolean checkWord;
     private int index;
     private String[] wort = new String[3];
 
     public geheimWort() {
-        wort = new String[]{"Apple", "Brain", "Chief", "Draft", "Error", "Final", "Grass", "Hotel", "Index", "Money", "Night", "Owner", "Party", "Power", "Kings", "River", "Score", "Aloha", "Among", "Insta"};
-        index = (int) (Math.random() * wort.length);
+        this.wort = new String[]{"Apple", "Brain", "Chief", "Draft", "Error", "Final", "Grass", "Hotel", "Index", "Money", "Night", "Owner", "Party", "Power", "Kings", "River", "Score", "Aloha", "Among", "Insta"};
+        Random rand = new Random();
+        this.index = rand.nextInt(this.wort.length);
     }
 
     public String getGeheimWort() {
         int count = 0;
-        for (int i = 0; i < wort.length; i++) {
-            if (wort[1].equals(" ")) {
+        for (int i = 0; i < this.wort.length; i++) {
+            if (this.wort[1].equals(" ")) {
                 count++;
             }
         }
-        if (count == wort.length) {
+        if (count == this.wort.length) {
             return "ZZZZZ";
         }
-        while (wort[index].equals(" ")) {
-            index = (int) (Math.random() * wort.length);
+        while (this.wort[index].equals(" ")) {
+            index = (int) (Math.random() * this.wort.length);
         }
-        String neuesWord = wort[index];
-        wort[index] = " ";
+        String neuesWord = this.wort[index];
+        this.wort[index] = " ";
 
         return neuesWord;
     }
