@@ -1,3 +1,4 @@
+import java.util.Objects;
 import java.util.Scanner;
 import java.io.*;
 import java.util.ArrayList;
@@ -35,7 +36,7 @@ public class Main {
         String nochmalsSpielen = "Y";
 
         for (int i = 0; i < 5; i++) {
-            wortErraten[i] = wort.substring(i, i + 1);
+            wortErraten[i] = wort.substring(i, i + 1).toUpperCase();
         }
         spielfeld(spiel);
         int rounds = 0;
@@ -60,7 +61,7 @@ public class Main {
                 String wahlUpperCase = wahl.toUpperCase();
                 for (int i = 0; i < wahlUpperCase.length(); i++) {
                     for (int j = 0; j < alfabet.length; j++) {
-                        if (wahlUpperCase.substring(i, i + 1).equals(alfabet[j])) {
+                        if (wahlUpperCase.substring(i, i + 1).toUpperCase().equals(alfabet[j])) {
                             alfabet[j] = "#";
                         }
                     }
@@ -70,9 +71,9 @@ public class Main {
                     spiel[jetztigeReihe][col] = wahlUpperCase.substring(col, col + 1);
                 }
                 for (int x = 0; x < wortErraten.length; x++) {
-                    if (spiel[jetztigeReihe][x].equals(wortErraten[x])) {
+                    if (spiel[jetztigeReihe][x].equals(wortErraten[x].toUpperCase())) {
                         spiel[jetztigeReihe + 1][x] = "*";
-                    } else if (spiel[jetztigeReihe][x] == (wortErraten[x])) {
+                    } else if (charakterInArray(wortErraten, spiel[jetztigeReihe][x])) {
                         spiel[jetztigeReihe + 1][x] = "@";
                     }
 
@@ -165,5 +166,16 @@ public class Main {
             return true;
         }
         return false;
+    }
+
+    public static boolean charakterInArray(String[] arr, String character) {
+        boolean tr = false;
+        for (String str : arr) {
+            if (str.equals(character)) {
+                tr = true;
+                break;
+            }
+        }
+        return tr;
     }
 }

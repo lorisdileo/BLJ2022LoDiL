@@ -6,7 +6,7 @@ public class geheimWort {
     private String[] wort = new String[3];
 
     public geheimWort() {
-        this.wort = new String[]{"Apple", "Brain", "Chief", "Draft", "Error", "Final", "Grass", "Hotel", "Index", "Money", "Night", "Owner", "Party", "Power", "Kings", "River", "Score", "Aloha", "Among", "Insta"};
+        this.wort = new String[]{"APPLE", "BRAIN", "CHIEF", "Draft", "Error", "Final", "Grass", "Hotel", "Index", "Money", "Night", "Owner", "Party", "Power", "Kings", "River", "Score", "Aloha", "Among", "Insta"};
         Random rand = new Random();
         this.index = rand.nextInt(this.wort.length);
     }

@@ -4,7 +4,211 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bba3fe2c-4d52-4c1a-8809-a2ef17a57d6b" name="Changes" comment="" />
+    <list default="true" id="bba3fe2c-4d52-4c1a-8809-a2ef17a57d6b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ2/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ2/main.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ2/nbproject/Makefile-Debug.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ2/nbproject/Makefile-Release.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ2/nbproject/Makefile-impl.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ2/nbproject/Makefile-variables.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ2/nbproject/Package-Debug.bash" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ2/nbproject/Package-Release.bash" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ2/nbproject/configurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ2/nbproject/private/Makefile-variables.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ2/nbproject/private/c_standard_headers_indexer.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ2/nbproject/private/configurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ2/nbproject/private/cpp_standard_headers_indexer.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ2/nbproject/private/launcher.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ2/nbproject/private/private.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ2/nbproject/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ3/CDebugÜ1/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ3/CDebugÜ1/main.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ3/CDebugÜ1/nbproject/Makefile-Debug.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ3/CDebugÜ1/nbproject/Makefile-Release.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ3/CDebugÜ1/nbproject/Makefile-impl.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ3/CDebugÜ1/nbproject/Makefile-variables.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ3/CDebugÜ1/nbproject/Package-Debug.bash" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ3/CDebugÜ1/nbproject/Package-Release.bash" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ3/CDebugÜ1/nbproject/configurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ3/CDebugÜ1/nbproject/private/Makefile-variables.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ3/CDebugÜ1/nbproject/private/c_standard_headers_indexer.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ3/CDebugÜ1/nbproject/private/configurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ3/CDebugÜ1/nbproject/private/cpp_standard_headers_indexer.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ3/CDebugÜ1/nbproject/private/launcher.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ3/CDebugÜ1/nbproject/private/private.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ3/CDebugÜ1/nbproject/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ3/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ3/main.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ3/nbproject/Makefile-Debug.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ3/nbproject/Makefile-Release.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ3/nbproject/Makefile-impl.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ3/nbproject/Makefile-variables.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ3/nbproject/Package-Debug.bash" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ3/nbproject/Package-Release.bash" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ3/nbproject/configurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ3/nbproject/private/Makefile-variables.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ3/nbproject/private/c_standard_headers_indexer.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ3/nbproject/private/configurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ3/nbproject/private/cpp_standard_headers_indexer.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ3/nbproject/private/launcher.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ3/nbproject/private/private.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ3/nbproject/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ4/main.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ5/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ5/main.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ5/nbproject/Makefile-Debug.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ5/nbproject/Makefile-Release.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ5/nbproject/Makefile-impl.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ5/nbproject/Makefile-variables.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ5/nbproject/Package-Debug.bash" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ5/nbproject/Package-Release.bash" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ5/nbproject/configurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ5/nbproject/private/Makefile-variables.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ5/nbproject/private/c_standard_headers_indexer.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ5/nbproject/private/configurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ5/nbproject/private/cpp_standard_headers_indexer.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ5/nbproject/private/launcher.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ5/nbproject/private/private.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ5/nbproject/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ6/.dep.inc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ6/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ6/build/Debug/MinGW-Windows/main.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ6/build/Debug/MinGW-Windows/main.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ6/dist/Debug/MinGW-Windows/cdebug_6.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ6/main.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ6/nbproject/Makefile-Debug.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ6/nbproject/Makefile-Release.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ6/nbproject/Makefile-impl.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ6/nbproject/Makefile-variables.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ6/nbproject/Package-Debug.bash" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ6/nbproject/Package-Release.bash" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ6/nbproject/configurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ6/nbproject/private/Makefile-variables.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ6/nbproject/private/c_standard_headers_indexer.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ6/nbproject/private/configurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ6/nbproject/private/cpp_standard_headers_indexer.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ6/nbproject/private/launcher.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ6/nbproject/private/private.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ6/nbproject/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ7/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ7/main.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ7/nbproject/Makefile-Debug.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ7/nbproject/Makefile-Release.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ7/nbproject/Makefile-impl.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ7/nbproject/Makefile-variables.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ7/nbproject/Package-Debug.bash" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ7/nbproject/Package-Release.bash" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ7/nbproject/configurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ7/nbproject/private/Makefile-variables.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ7/nbproject/private/c_standard_headers_indexer.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ7/nbproject/private/configurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ7/nbproject/private/cpp_standard_headers_indexer.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ7/nbproject/private/launcher.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ7/nbproject/private/private.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ7/nbproject/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ8/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ8/main.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ8/nbproject/Makefile-Debug.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ8/nbproject/Makefile-Release.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ8/nbproject/Makefile-impl.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ8/nbproject/Makefile-variables.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ8/nbproject/Package-Debug.bash" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ8/nbproject/Package-Release.bash" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ8/nbproject/configurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ8/nbproject/private/Makefile-variables.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ8/nbproject/private/c_standard_headers_indexer.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ8/nbproject/private/configurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ8/nbproject/private/cpp_standard_headers_indexer.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ8/nbproject/private/launcher.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ8/nbproject/private/private.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ8/nbproject/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ9/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ9/main.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ9/nbproject/Makefile-Debug.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ9/nbproject/Makefile-Release.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ9/nbproject/Makefile-impl.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ9/nbproject/Makefile-variables.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ9/nbproject/Package-Debug.bash" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ9/nbproject/Package-Release.bash" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ9/nbproject/configurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ9/nbproject/private/Makefile-variables.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ9/nbproject/private/c_standard_headers_indexer.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ9/nbproject/private/configurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ9/nbproject/private/cpp_standard_headers_indexer.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ9/nbproject/private/launcher.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ9/nbproject/private/private.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CDebugÜ9/nbproject/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CÜbungen4.2.2/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CÜbungen4.2.2/main.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CÜbungen4.2.2/nbproject/Makefile-Debug.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CÜbungen4.2.2/nbproject/Makefile-Release.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CÜbungen4.2.2/nbproject/Makefile-impl.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CÜbungen4.2.2/nbproject/Makefile-variables.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CÜbungen4.2.2/nbproject/Package-Debug.bash" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CÜbungen4.2.2/nbproject/Package-Release.bash" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CÜbungen4.2.2/nbproject/configurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CÜbungen4.2.2/nbproject/private/Makefile-variables.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CÜbungen4.2.2/nbproject/private/c_standard_headers_indexer.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CÜbungen4.2.2/nbproject/private/configurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CÜbungen4.2.2/nbproject/private/cpp_standard_headers_indexer.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CÜbungen4.2.2/nbproject/private/launcher.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CÜbungen4.2.2/nbproject/private/private.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CÜbungen4.2.2/nbproject/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CÜbungen4.2.3/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CÜbungen4.2.3/main.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CÜbungen4.2.3/nbproject/Makefile-Debug.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CÜbungen4.2.3/nbproject/Makefile-Release.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CÜbungen4.2.3/nbproject/Makefile-impl.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CÜbungen4.2.3/nbproject/Makefile-variables.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CÜbungen4.2.3/nbproject/Package-Debug.bash" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CÜbungen4.2.3/nbproject/Package-Release.bash" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CÜbungen4.2.3/nbproject/configurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CÜbungen4.2.3/nbproject/private/Makefile-variables.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CÜbungen4.2.3/nbproject/private/c_standard_headers_indexer.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CÜbungen4.2.3/nbproject/private/configurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CÜbungen4.2.3/nbproject/private/cpp_standard_headers_indexer.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CÜbungen4.2.3/nbproject/private/launcher.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CÜbungen4.2.3/nbproject/private/private.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW35/CÜbungen4.2.3/nbproject/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW36/CÜbungen4.2.2/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW36/CÜbungen4.2.2/main.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW36/CÜbungen4.2.2/nbproject/Makefile-Debug.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW36/CÜbungen4.2.2/nbproject/Makefile-Release.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW36/CÜbungen4.2.2/nbproject/Makefile-impl.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW36/CÜbungen4.2.2/nbproject/Makefile-variables.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW36/CÜbungen4.2.2/nbproject/Package-Debug.bash" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW36/CÜbungen4.2.2/nbproject/Package-Release.bash" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW36/CÜbungen4.2.2/nbproject/configurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW36/CÜbungen4.2.2/nbproject/private/Makefile-variables.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW36/CÜbungen4.2.2/nbproject/private/c_standard_headers_indexer.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW36/CÜbungen4.2.2/nbproject/private/configurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW36/CÜbungen4.2.2/nbproject/private/cpp_standard_headers_indexer.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW36/CÜbungen4.2.2/nbproject/private/launcher.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW36/CÜbungen4.2.2/nbproject/private/private.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW36/CÜbungen4.2.2/nbproject/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW36/CÜbungen4.2.3/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW36/CÜbungen4.2.3/main.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW36/CÜbungen4.2.3/nbproject/Makefile-Debug.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW36/CÜbungen4.2.3/nbproject/Makefile-Release.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW36/CÜbungen4.2.3/nbproject/Makefile-impl.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW36/CÜbungen4.2.3/nbproject/Makefile-variables.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW36/CÜbungen4.2.3/nbproject/Package-Debug.bash" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW36/CÜbungen4.2.3/nbproject/Package-Release.bash" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW36/CÜbungen4.2.3/nbproject/configurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW36/CÜbungen4.2.3/nbproject/private/Makefile-variables.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW36/CÜbungen4.2.3/nbproject/private/c_standard_headers_indexer.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW36/CÜbungen4.2.3/nbproject/private/configurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW36/CÜbungen4.2.3/nbproject/private/cpp_standard_headers_indexer.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW36/CÜbungen4.2.3/nbproject/private/launcher.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW36/CÜbungen4.2.3/nbproject/private/private.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW36/CÜbungen4.2.3/nbproject/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Wordle/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Wordle/geheimWort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Wordle/wordl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/geheimWort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geheimWort.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,7 +235,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/loris/OneDrive/Dokumente/GitHub/BLJ2022LoDiL/Java/KW51/Wordle"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -50,19 +255,16 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>71</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/geheimWort.java</url>
-          <line>13</line>
-          <properties class="geheimWort" method="getGeheimWort">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="5" />
+          <line>75</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="wortErraten" />
+        <watch expression="wort" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
