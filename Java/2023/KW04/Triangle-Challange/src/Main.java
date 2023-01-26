@@ -1,5 +1,5 @@
 public class Main {
     public static void main(String[] args) {
-        // start triangle app
+        new TriangleApp("six", "samuel sin chline").start();
     }
 }

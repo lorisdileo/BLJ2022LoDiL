@@ -1,4 +1,6 @@
 import java.util.Scanner;
+
+import exception.*;
 // import the exceptions
 
 public class TriangleApp {
@@ -27,8 +29,9 @@ public class TriangleApp {
      * @param handler of type String to print in the application header
      */
     public TriangleApp(String company, String handler) {
-        // persist company and handler
-        // with initialisation programm is running.
+        this.company = company;
+        this.handler = handler;
+        isRunning = true;
     }
 
     /**
@@ -39,20 +42,14 @@ public class TriangleApp {
         printHeader();
         while (isRunning) {
             System.out.println("\nTEST CASES TRIANGLE\n");
-            this.katheteAInput = katheteAInput;
-
-
-
+            promptSide();
 
             try {
-                // validate Input (might throw exception)
-                // get triangle code and write it to field code
+                validateInput();
             } catch (TriangleException e) {
-                // get error code from exception and write it to field code
+                code = e.getLocalizedMessage();
             } finally {
-                System.out.println("----------------------------------------------");
-                System.out.println();//noch machen
-                System.out.println("----------------------------------------------");
+                printResult();
                 // ask user for next step
             }
         }
@@ -65,8 +62,8 @@ public class TriangleApp {
         System.out.println("**********************************************");
         System.out.println("             TRIANGLE EVALUATOR               ");
         System.out.println("**********************************************");
-        System.out.println("Company: SIX Group AG, 2023                   ");
-        System.out.println("Handler: Loris Di Leo                         ");
+        System.out.printf("Company: %s \n", company);
+        System.out.printf("Handler: %s \n", handler);
         System.out.println("**********************************************");
 
     }
@@ -77,21 +74,18 @@ public class TriangleApp {
     private void printResult() {
         System.out.println(code);
     }
-
     /**
      * This method prompts the user to give an input for a trinalge side.
      *
-     * @param side of type String to display as title for the prompt.
      * @return the input of type String.
      */
-    private String promptSide(String side) {
+    private void promptSide() {
         System.out.println("Kathete A:\t");
-        Integer katheteAInput = scan.nextInt();
+        sideAInput = scan.nextLine();
         System.out.println("Kathete B:\t");
-        Integer katheteBInput = scan.nextInt();
+        sideBInput = scan.nextLine();
         System.out.println("Hypothenuse C:\t");
-        Integer hypothenuseCInput = scan.nextInt();
-        return side;
+        sideCInput = scan.nextLine();
     }
 
     /**
@@ -118,13 +112,19 @@ public class TriangleApp {
      */
     private void validateInput() throws TriangleException {
         // validate sideAInput, sideBInput, sideCInput as double
-        KatheteAInput = in.nextDouble();
-        KatheteBInput = in.nextDouble();
-        HypothenuseCInput = in.nextDouble();
-
+        try {
+            sideA = Double.parseDouble(sideAInput);
+            sideB = Double.parseDouble(sideBInput);
+            sideC = Double.parseDouble(sideCInput);
+        } catch (Exception e){
+            throw new TriangleException("ERR96TF");
+        }
         if (sideA == 0 || sideB == 0 || sideC == 0) {
             throw new ZeroTriangleSideException();
-            // throws ZeroTriangleSideException
+        } else if (sideA < 0 || sideB < 0 || sideC < 0) {
+            throw new NegativeTriangleSideException();
+        } else if (sideA == char || sideB == char || sideC == char) {
+            throw new IllegalTriangleSideException();
         }
         // validates other triangle cases
     }
@@ -136,7 +136,7 @@ public class TriangleApp {
      * @return The corresponding code for each triangle.
      */
     private String determineTriangleType() {
-        // todo
+
         return null;
     }
 }
