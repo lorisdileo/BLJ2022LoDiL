@@ -1,0 +1,9 @@
+[Datum / Uhrzeit] [Name der gelesenen Datei] 
+-------------------------------------------- 
+Number of unique words:	[TAB]		[Anzahl] 
+Total number of words:	[TAB]		[Anzahl] 
+Most common word:		[TAB]         [Wort]
+-------------------------------------------- 
+[Wort] [TAB] [Anzahl] 
+[Wort] [TAB] [Anzahl] 
+...
