@@ -3,7 +3,7 @@ import javax.swing.*;
 public class bücher extends Medien{
     private String genre;
 
-    public bücher(String titel, int erscheinungsjahr, String sprache, String hersteller, String genre) {
+    public bücher(String genre, String titel, int erscheinungsjahr, String sprache, String hersteller) {
         super(titel, erscheinungsjahr, sprache, hersteller);
         this.genre = genre;
     }
