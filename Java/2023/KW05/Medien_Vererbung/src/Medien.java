@@ -4,14 +4,18 @@ public class Medien {
     private String sprache;
     private String hersteller;
 
-    public Medien(String title, int erscheinungsjahr, String sprache, String hersteller) {
+    public Medien(String titel, int erscheinungsjahr, String sprache, String hersteller) {
+        this.titel = titel;
+        this.erscheinungsjahr = erscheinungsjahr;
+        this.sprache = sprache;
+        this.hersteller = hersteller;
     }
 
     public void printInfo() {
-        String info = "Titel: " + titel +
-                "\nErscheinungsdatum: " + erscheinungsjahr +
-                "\nSprache: " + sprache +
-                "\nHersteller: " + hersteller;
+        String info = "Titel: " + getTitel() +
+                "\nErscheinungsdatum: " + getErscheinungsjahr() +
+                "\nSprache: " + getSprache() +
+                "\nHersteller: " + getHersteller();
         System.out.println(info);
     }
 

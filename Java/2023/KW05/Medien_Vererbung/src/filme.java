@@ -1,9 +1,16 @@
 public class filme extends Medien{
 
     private String hauptdarsteller;
-    public filme(String title, int erscheinungsjahr, String sprache, String hersteller, String hauptdarsteller) {
+    public filme(String hauptdarsteller, String title, int erscheinungsjahr, String sprache, String hersteller) {
         super(title, erscheinungsjahr, sprache, hersteller);
         this.hauptdarsteller = hauptdarsteller;
+    }
+
+    @Override
+    public void printInfo(){
+        String moreInfo = "\nHautdarsteller: " + hauptdarsteller;
+        System.out.println(moreInfo);
+        super.printInfo();
     }
 
     public String getHauptdarsteller() {
