@@ -32,14 +32,17 @@ public class FileIOHandler {
         for (int count : TextFileAnalyzer.script.values()) {
             totalCount += count;
         }
-        String mostWord = "";
+        /*
+        for (Map.Entry<String, Integer> set: TextFileAnalyzer.script.entrySet()) {
 
+        }*/
         LocalDate today = LocalDate.now();
         System.out.printf("%s %s\n", today.toString(), TextFileAnalyzer.path);
         System.out.println("------------------------------------");
         System.out.println("Total number of unique words:\t" + TextFileAnalyzer.script.size());
         System.out.println("Total number of words:\t" + totalCount);
-        System.out.println("Most common word:\t" );
+        System.out.println("Most common word:\t");
+        System.out.println("------------------------------------");
         System.out.println(TextFileAnalyzer.script);
     }
 }
