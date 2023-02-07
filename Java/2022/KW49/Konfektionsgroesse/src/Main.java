@@ -1,4 +1,5 @@
-import  java.util.Scanner;
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
@@ -11,21 +12,12 @@ public class Main {
 
         int geschlecht = scan.nextInt();
 
-        switch (geschlecht){
-            case -> 1{
-            } {
+        switch (geschlecht) {
+            case 1: Formel.mannBerechnung();
+            break;
 
-            }
-             case -> 2 {
-
-
-            }
-
-
-
-
-
+            case 2: Formel.frauBerechnung();
+            break;
         }
-
     }
 }
