@@ -23,7 +23,7 @@ public class Main {
         clock[8][8] = 0;
 
         switch (anzahlStudnen) {
-            case 0 -> {
+            case 0, 12 -> {
                 clock[8][8] = 1;
                 clock[7][8] = 1;
                 clock[6][8] = 1;
@@ -31,35 +31,35 @@ public class Main {
                 clock[4][8] = 1;
                 clock[3][8] = 1;
             }
-            case 1 -> {
+            case 1, 13 -> {
                 clock[8][8] = 1;
                 clock[6][9] = 1;
                 clock[4][10] = 1;
             }
-            case 2 -> {
+            case 2, 14 -> {
                 clock[8][8] = 1;
                 clock[7][9] = 1;
                 clock[6][10] = 1;
                 clock[5][11] = 1;
             }
-            case 3 -> {
+            case 3, 15 -> {
                 clock[8][8] = 1;
                 clock[8][9] = 1;
                 clock[8][10] = 1;
                 clock[8][11] = 1;
             }
-            case 4 -> {
+            case 4, 16 -> {
                 clock[8][8] = 1;
                 clock[9][9] = 1;
                 clock[10][10] = 1;
                 clock[11][11] = 1;
             }
-            case 5 -> {
+            case 5, 17 -> {
                 clock[8][8] = 1;
                 clock[10][9] = 1;
                 clock[12][10] = 1;
             }
-            case 6 -> {
+            case 6, 18 -> {
                 clock[8][8] = 1;
                 clock[9][8] = 1;
                 clock[10][8] = 1;
@@ -67,64 +67,35 @@ public class Main {
                 clock[12][8] = 1;
                 clock[13][8] = 1;
             }
-            case 9 -> {
+            case 7, 19 -> {
+                clock[8][8] = 1;
+                clock[10][7] = 1;
+                clock[12][6] = 1;
+            }
+            case 8, 20 -> {
+                clock[8][8] = 1;
+                clock[9][7] = 1;
+                clock[10][6] = 1;
+                clock[11][5] = 1;
+            }
+            case 9, 21 -> {
                 clock[8][8] = 1;
                 clock[8][7] = 1;
                 clock[8][6] = 1;
                 clock[8][5] = 1;
             }
-            case 12 -> {
+            case 10, 22 -> {
                 clock[8][8] = 1;
-                clock[7][8] = 1;
-                clock[6][8] = 1;
-                clock[5][8] = 1;
-                clock[4][8] = 1;
-                clock[3][8] = 1;
+                clock[7][7] = 1;
+                clock[6][6] = 1;
+                clock[5][5] = 1;
             }
-            case 13 -> {
+            case 11, 23 -> {
                 clock[8][8] = 1;
-                clock[6][9] = 1;
-                clock[4][10] = 1;
-            }
-            case 14 -> {
-                clock[8][8] = 1;
-                clock[7][9] = 1;
-                clock[6][10] = 1;
-                clock[5][11] = 1;
-            }
-            case 15 -> {
-                clock[8][8] = 1;
-                clock[8][9] = 1;
-                clock[8][10] = 1;
-                clock[8][11] = 1;
-            }
-            case 16 -> {
-                clock[8][8] = 1;
-                clock[9][9] = 1;
-                clock[10][10] = 1;
-                clock[11][11] = 1;
-            }
-            case 17 -> {
-                clock[8][8] = 1;
-                clock[10][9] = 1;
-                clock[12][10] = 1;
-            }
-            case 18 -> {
-                clock[8][8] = 1;
-                clock[9][8] = 1;
-                clock[10][8] = 1;
-                clock[11][8] = 1;
-                clock[12][8] = 1;
-                clock[13][8] = 1;
-            }
-            case 21 -> {
-                clock[8][8] = 1;
-                clock[8][7] = 1;
-                clock[8][6] = 1;
-                clock[8][5] = 1;
+                clock[6][7] = 1;
+                clock[4][6] = 1;
             }
         }
-
 
         System.out.println("Geben Sie die Minuten Anzahl ein. (15, 30, 45, 60)\n");
         int AnzahlMinuten = scan.nextInt();
@@ -205,7 +176,6 @@ public class Main {
             { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
             { 0, 0, 0, 0, 0, 7, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0},
             { 0, 0, 0, 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0}
-
         };*/
 
 
