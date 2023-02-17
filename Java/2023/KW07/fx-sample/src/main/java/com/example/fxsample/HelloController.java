@@ -8,8 +8,6 @@ import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
 
 public class HelloController {
-    @FXML
-    private Button speichern;
 
     @FXML
     private TextField fieldPrename;
@@ -18,9 +16,7 @@ public class HelloController {
     @FXML
     private TextField fieldAge;
 
-    @FXML
-    private TextField fieldPrenameDel;
-    private PersonManager mgr = new PersonManager();
+    private final PersonManager mgr = new PersonManager();
 
     @FXML
     private void savePerson() {
@@ -33,30 +29,22 @@ public class HelloController {
 
     @FXML
     private void deletePerson (){
-        mgr.getPeople().remove(mgr.getIndex());
-        mgr.setIndex(mgr.getIndex()-1);
-        System.out.println(mgr.people);
+        mgr.removePerson();
     }
 
     @FXML
     private void prevPerson (){
-        fieldPrename.setText(Person.getPreName());
-        fieldName.setText(Person.getName());
-        fieldAge.setText(String.valueOf(Person.getAge()));
+        String[] airUp = mgr.previPerson(-1);
+        fieldPrename.setText(airUp[0]);
+        fieldName.setText(airUp[1]);
+        fieldAge.setText(airUp[2]);
     }
 
     @FXML
     private void nextPerson (){
-
+        String[] airUp = mgr.nextPerson(1);
+        fieldPrename.setText(airUp[0]);
+        fieldName.setText(airUp[1]);
+        fieldAge.setText(airUp[2]);
     }
-
-
-
-
-
-
-    /*@FXML
-    protected void onHelloButtonClick() {
-       welcomeText.setText("Welcome to JavaFX Application!");
-    }*/
 }

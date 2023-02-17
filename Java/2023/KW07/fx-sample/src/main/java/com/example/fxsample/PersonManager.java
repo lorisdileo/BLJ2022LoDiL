@@ -6,10 +6,17 @@ import java.util.List;
 public class PersonManager {
     public ArrayList<Person> people = new ArrayList<>();
 
-    private int index = 0;
+    private int index = -1;
 
     public void addPerson(String prename, String name, int age) {
         people.add(new Person(prename, name, age));
+        index++;
+    }
+
+    public void removePerson(){
+        getPeople().remove(index);
+        System.out.println(people);
+        index = people.size()-1;
     }
 
     public ArrayList<Person> getPeople() {
@@ -26,5 +33,23 @@ public class PersonManager {
 
     public void setIndex(int index) {
         this.index = index;
+    }
+
+    public String[] previPerson(int plusminus){
+        index += plusminus;
+        Person person = people.get(index);
+        String preName = person.getPreName();
+        String name = person.getName();
+        String age = String.valueOf(person.getAge());
+        return new String[] {preName, name, String.valueOf(age)};
+    }
+
+    public String[] nextPerson(int plusminus){
+        index += plusminus;
+        Person person = people.get(index);
+        String preName = person.getPreName();
+        String name = person.getName();
+        String age = String.valueOf(person.getAge());
+        return new String[] {preName, name, String.valueOf(age)};
     }
 }

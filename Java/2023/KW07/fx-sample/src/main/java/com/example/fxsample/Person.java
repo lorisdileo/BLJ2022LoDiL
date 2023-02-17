@@ -1,10 +1,10 @@
 package com.example.fxsample;
 
 public class Person {
-    private static String preName;
+    private String preName;
 
-    private static String name;
-    private static int age;
+    private String name;
+    private int age;
 
     public Person(String preName, String name, int age) {
         this.preName = preName;
@@ -12,15 +12,15 @@ public class Person {
         this.age = age;
     }
 
-    public static String getPreName() {
+    public String getPreName() {
         return preName;
     }
 
-    public static String getName() {
+    public String getName() {
         return name;
     }
 
-    public static int getAge() {
+    public int getAge() {
         return age;
     }
 
