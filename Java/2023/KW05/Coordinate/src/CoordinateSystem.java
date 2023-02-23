@@ -4,7 +4,7 @@ public class CoordinateSystem {
 
     private final int size;
 
-    ArrayList<CSPoint> cs = new ArrayList<CSPoint>();
+    private ArrayList<CSPoint> cs = new ArrayList<CSPoint>();
 
 
 

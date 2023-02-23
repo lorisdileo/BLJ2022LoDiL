@@ -17,6 +17,9 @@ public class CSPoint extends Point {
         ++countID;
     }
 
+    public CSPoint(int x1, int y1, int x2, int y2) {
+    }
+
     @Override
     public String toString() {
         return "CSPoint{" +
@@ -24,6 +27,4 @@ public class CSPoint extends Point {
                 ", y=" + y +
                 '}';
     }
-
-
 }
