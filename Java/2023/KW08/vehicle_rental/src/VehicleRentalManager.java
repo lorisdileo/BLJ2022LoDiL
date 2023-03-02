@@ -4,6 +4,7 @@ import Exceptions.MinorAgeException;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class VehicleRentalManager {
 
@@ -30,6 +31,24 @@ public class VehicleRentalManager {
         System.out.println("Preis: " + contract.getFahrzeug().getPrice() + " pro Stunde");
         System.out.println("------------------------------------------------------------------");
     }
+
+    /*public Person createPersonInput(){
+        Scanner scan = new Scanner(System.in);
+
+        System.out.print("Geben Sie den Vornamen ein: ");
+        String firstName = scan.next();
+
+        System.out.print("Geben Sie den nachname ein: ");
+        String lastName = scan.next();
+
+        System.out.print("Geben Sie das Geburtsdatum ein: ");
+        LocalDate birthYear = LocalDate.parse(scan.next());
+
+        Person person = new Person(firstName, lastName, birthYear);
+
+        customerList.add(person);
+        return person;
+    }*/
 
     public ArrayList<Person> getCustomerList() {
         return customerList;

@@ -14,17 +14,6 @@ public class Person {
         this.birthYear = birthYear;
     }
 
-    /*public void createPersonInput(){
-        System.out.print("Geben Sie den Vornamen ein: ");
-        firstName = scan.next();
-
-        System.out.println("Geben Sie den nachname ein: ");
-        lastName = scan.next();
-
-        System.out.println("Geben Sie das Geburtsdatum ein: ");
-        birthYear = LocalDate.parse(scan.next());
-    }*/
-
     public String getFirstName() {
         return firstName;
     }
