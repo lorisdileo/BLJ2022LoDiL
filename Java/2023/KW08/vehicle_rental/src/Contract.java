@@ -13,18 +13,18 @@ public class Contract extends Exception {
     private LocalDate endDatum;
 
     public Contract(Person kunde, Vehicle fahrzeug, LocalDate startDatum, LocalDate endDatum, ArrayList<Person> denyList, ArrayList<Person> customerList, ArrayList<Contract> contracts) throws DenylistedPersonException, MinorAgeException, LeaseLengthCollisionException {
-        if (Period.between(kunde.getBirthYear(), LocalDate.now()).getYears() < 18 ){
+        if (Period.between(kunde.getBirthYear(), LocalDate.now()).getYears() < 18) {
             throw new MinorAgeException();
         }
 
         for (Contract ct : contracts) {
-            if (startDatum.isBefore(ct.endDatum) && endDatum.isAfter(ct.startDatum) && ct.getFahrzeug() == fahrzeug || endDatum.isBefore(startDatum)){
+            if (startDatum.isBefore(ct.endDatum) && endDatum.isAfter(ct.startDatum) && ct.getFahrzeug() == fahrzeug || endDatum.isBefore(startDatum)) {
                 throw new LeaseLengthCollisionException();
             }
         }
 
-        for (Person person : denyList){
-            if (person.getLastName().equals(kunde.getLastName())){
+        for (Person person : denyList) {
+            if (person.getLastName().equals(kunde.getLastName())) {
                 throw new DenylistedPersonException();
             }
         }

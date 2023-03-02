@@ -1,10 +1,10 @@
 public class Vehicle {
-private String marke;
+    private String marke;
     private String farbe;
     private float ps;
     private float price;
-    
-    public Vehicle(String marke, String farbe, float ps, float price){
+
+    public Vehicle(String marke, String farbe, float ps, float price) {
         this.marke = marke;
         this.farbe = farbe;
         this.ps = ps;
