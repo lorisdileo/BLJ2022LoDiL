@@ -1,12 +1,14 @@
 public class Vehicle {
 private String marke;
     private String farbe;
-    private int ps; //float
+    private float ps;
+    private float price;
     
-    public Vehicle(String marke, String farbe, int ps){
+    public Vehicle(String marke, String farbe, float ps, float price){
         this.marke = marke;
         this.farbe = farbe;
         this.ps = ps;
+        this.price = price;
     }
 
     public String getMarke() {
@@ -25,11 +27,19 @@ private String marke;
         this.farbe = farbe;
     }
 
-    public int getPs() {
+    public float getPs() {
         return ps;
     }
 
-    public void setPs(int ps) {
+    public void setPs(float ps) {
         this.ps = ps;
+    }
+
+    public float getPrice() {
+        return price;
+    }
+
+    public void setPrice(float price) {
+        this.price = price;
     }
 }

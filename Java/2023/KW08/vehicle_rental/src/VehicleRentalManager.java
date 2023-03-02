@@ -1,3 +1,7 @@
+import Exceptions.DenylistedPersonException;
+import Exceptions.LeaseLengthCollisionException;
+import Exceptions.MinorAgeException;
+
 import java.time.LocalDate;
 import java.util.ArrayList;
 
@@ -12,17 +16,19 @@ public class VehicleRentalManager {
         denyList.add(person);
     }
 
-    public void createContract(Person kunde, Vehicle fahrzeug, LocalDate startDatum, LocalDate endDatum, ArrayList<Person> denyList, ArrayList<Person> customerList, ArrayList<Contract> contracts){
-        Contract contract = new Contract(kunde,  fahrzeug,  startDatum,  endDatum, denyList, customerList, contracts);
-        contracts.add(contract);
+    public void createContract(Person kunde, Vehicle fahrzeug, LocalDate startDatum, LocalDate endDatum, ArrayList<Person> denyList, ArrayList<Person> customerList, ArrayList<Contract> contracts) throws DenylistedPersonException, MinorAgeException, LeaseLengthCollisionException {
+        Contract contract1 = new Contract(kunde,  fahrzeug,  startDatum,  endDatum, denyList, customerList, contracts);
+        contracts.add(contract1);
     }
 
 
     public void printContract(Contract contract){
         System.out.println("------------------------------------------------------------------");
-        System.out.println("Name: " + contract.getKunde().getFirstName() + contract.getKunde().getLastName());
+        System.out.println("Name: " + contract.getKunde().getFirstName() + " " + contract.getKunde().getLastName());
         System.out.println("Auto: " + contract.getFahrzeug().getMarke());
-        System.out.println("Startdatum: " + contract.getStartDatum() + "Enddatum: " + contract.getStartDatum());
+        System.out.println("Startdatum: " + contract.getStartDatum() + " Enddatum: " + contract.getEndDatum());
+        System.out.println("Preis: " + contract.getFahrzeug().getPrice() + " pro Stunde");
+        System.out.println("------------------------------------------------------------------");
     }
 
     public ArrayList<Person> getCustomerList() {
