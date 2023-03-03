@@ -31,6 +31,7 @@ public class VehicleRentalManager {
         System.out.println("Auto: " + contract.getFahrzeug().getMarke());
         System.out.println("Startdatum: " + contract.getStartDatum() + " Enddatum: " + contract.getEndDatum());
         System.out.println("Preis: " + contract.getFahrzeug().getPrice() + " pro Tag");
+        System.out.println("Unterschrift Kunde: \t\t" + LocalDate.now());
         System.out.println("------------------------------------------------------------------");
     }
 
@@ -98,6 +99,7 @@ public class VehicleRentalManager {
 
             Vehicle chosenOne = null;
             String fahr = scan.next();
+
 
             for (int i = 0; i < vehicles.size(); i++) {
                 if (Objects.equals(vehicles.get(i).getMarke(), fahr)) {

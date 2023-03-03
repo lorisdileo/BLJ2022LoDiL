@@ -12,7 +12,7 @@ public class Main {
         Scanner scan = new Scanner(System.in);
         Vehicle bug = new Vehicle("Bugatti", "Bronze", 2000, 1000);
         Vehicle lambo = new Vehicle("Lamborghini", "Blau", 1100, 200);
-        Vehicle rolls = new Vehicle("Rolls Royce", "Weiss", 550, 400);
+        Vehicle paga = new Vehicle("Pagani", "Weiss", 2500, 2000);
 
         VehicleRentalManager vh = new VehicleRentalManager();
 
@@ -20,7 +20,11 @@ public class Main {
 
         vh.vehicles.add(bug);
         vh.vehicles.add(lambo);
-        vh.vehicles.add(rolls);
+        vh.vehicles.add(paga);
+
+        System.out.println("*******************************************************");
+        System.out.println("                     Willkommen                        ");
+        System.out.println("*******************************************************");
 
         while (isRunning) {
             System.out.println();
