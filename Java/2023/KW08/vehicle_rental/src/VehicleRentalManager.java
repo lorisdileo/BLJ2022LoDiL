@@ -29,9 +29,9 @@ public class VehicleRentalManager {
         System.out.println("------------------------------------------------------------------");
         System.out.println("Name: " + contract.getKunde().getFirstName() + " " + contract.getKunde().getLastName());
         System.out.println("Auto: " + contract.getFahrzeug().getMarke());
-        System.out.println("Startdatum: " + contract.getStartDatum() + " Enddatum: " + contract.getEndDatum());
+        System.out.println("Startdatum: " + contract.getStartDatum() + "\t Enddatum: " + contract.getEndDatum());
         System.out.println("Preis: " + contract.getFahrzeug().getPrice() + " pro Tag");
-        System.out.println("Unterschrift Kunde: \t\t" + LocalDate.now());
+        System.out.println("Unterschrift Kunde: \t\t\t\t" + LocalDate.now());
         System.out.println("------------------------------------------------------------------");
     }
 
@@ -42,7 +42,7 @@ public class VehicleRentalManager {
         System.out.print("Geben Sie den Nachname ein: ");
         String lastName = scan.next();
 
-        System.out.print("Geben Sie das Geburtsdatum ein: ");
+        System.out.print("Geben Sie das Geburtsdatum ein: (YYYY-MM-DD) ");
         LocalDate birthYear = LocalDate.parse(scan.next());
 
         Person person = new Person(firstName, lastName, birthYear);
@@ -64,12 +64,8 @@ public class VehicleRentalManager {
 
         for (int i = 0; i < customerList.size(); i++) {
             if (Objects.equals(customerList.get(i).getFirstName(), userInputdeny)) {
+                denyPers = customerList.get(i);
                 customerList.remove(denyPers);
-            }
-        }
-
-        for (int i = 0; i < customerList.size(); i++) {
-            if (Objects.equals(customerList.get(i).getFirstName(), userInputdeny)) {
                 denyList.add(denyPers);
             }
         }
@@ -81,6 +77,12 @@ public class VehicleRentalManager {
             for (int i = 0; i < customerList.size(); i++) {
                 System.out.println("- " + customerList.get(i).getFirstName());
             }
+
+            System.out.println("Personen in der Verbotsliste:");
+            for (int i = 0; i < denyList.size(); i++) {
+                System.out.println("- " + denyList.get(i).getFirstName());
+            }
+
             String kunde = scan.next();
 
             Person chosenPerson = null;
@@ -90,7 +92,11 @@ public class VehicleRentalManager {
                     chosenPerson = customerList.get(i);
                 }
             }
-
+            for (int i = 0; i < denyList.size(); i++) {
+                if (Objects.equals(denyList.get(i).getFirstName(), kunde)) {
+                    chosenPerson = denyList.get(i);
+                }
+            }
 
             System.out.println("Welches Auto wollen Sie mieten?");
             for (int i = 0; i < vehicles.size(); i++) {

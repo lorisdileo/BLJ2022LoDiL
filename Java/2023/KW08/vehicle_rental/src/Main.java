@@ -10,9 +10,9 @@ import java.time.LocalDate;
 public class Main {
     public static void main(String[] args) throws MinorAgeException, DenylistedPersonException, LeaseLengthCollisionException {
         Scanner scan = new Scanner(System.in);
-        Vehicle bug = new Vehicle("Bugatti", "Bronze", 2000, 1000);
-        Vehicle lambo = new Vehicle("Lamborghini", "Blau", 1100, 200);
-        Vehicle paga = new Vehicle("Pagani", "Weiss", 2500, 2000);
+        Vehicle bug = new Vehicle("Bugatti", "Bronze", 2000, 17500);
+        Vehicle lambo = new Vehicle("Lamborghini", "Blau", 1100, 4500);
+        Vehicle paga = new Vehicle("Pagani", "Weiss", 2500, 20000);
 
         VehicleRentalManager vh = new VehicleRentalManager();
 
