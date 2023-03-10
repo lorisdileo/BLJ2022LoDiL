@@ -54,51 +54,46 @@ public class functions {
         int height = image.getHeight();
         double px = 0.25;
 
-        int totalRed = 0;
-        int totalGreen = 0;
-        int totalBlue = 0;
-        int count = 0;
+        for (int y = 1; y < height - 1; y++) {
+            for (int x = 1; x < width - 1; x++) {
+                Color color = new Color(image.getRGB(x, y));
 
-        for (int i = 0; i < width; i++) {
-            for (int j = 0; j < height; j++) {
-                int rgb = image.getRGB(i, j);
-                if (rand.nextDouble() == white.getRGB() && rand.nextDouble() == black.getRGB()) {
-                    Color pixelColor = new Color(image.getRGB(i, j));
-                    totalRed = pixelColor.getRed();
-                    totalGreen += pixelColor.getGreen();
-                    totalBlue += pixelColor.getBlue();
-                    count++;
 
-                    if (count == 0) {
-                        System.out.println("bye");
+                /*if (color.equals(white) || color.equals(black)) {
+                    continue;
+                }*/
+
+                int sumRed = 0;
+                int sumGreen = 0;
+                int sumBlue = 0;
+                int count = 0;
+                for (int j = -1; j <= 1; j++) {
+                    for (int i = -1; i <= 1; i++) {
+                        Color surroundingColor = new Color(image.getRGB(x + i, y + j));
+                        if (!surroundingColor.equals(white) && !surroundingColor.equals(black)) {
+                            sumRed += surroundingColor.getRed();
+                            sumGreen += surroundingColor.getGreen();
+                            sumBlue += surroundingColor.getBlue();
+                            count++;
+                        }
                     }
+                }
 
-                    int averageRed = totalRed / count;
-                    int averageGreen = totalGreen / count;
-                    int averageBlue = totalBlue / count;
-
-                    System.out.println(totalRed);
-                    System.out.println(totalGreen);
-                    System.out.println(totalBlue);
-
-
-                    Color cl = new Color(averageRed, averageGreen, averageBlue);
-
-                    image.setRGB(i, j, cl.getRGB());
-
-                    JFrame rahmen = new JFrame();
-                    rahmen.setSize(800, 1000);
-                    JLabel logo = new JLabel(new ImageIcon(image));
-
-                    rahmen.add(logo);
-                    rahmen.setVisible(true);
-
-                    /*ImageWriter wr = (ImageWriter) ImageIO.getImageWritersByMIMEType("image/jpeg").next();
-                    ImageOutputStream str = ImageIO.createImageOutputStream(new File("samu.jpg"));
-                    wr.setOutput(str);
-                    wr.write(image);*/
+                if (count > 0) {
+                    int avgRed = sumRed / count;
+                    int avgGreen = sumGreen / count;
+                    int avgBlue = sumBlue / count;
+                    Color avgColor = new Color(avgRed, avgGreen, avgBlue);
+                    image.setRGB(x, y, avgColor.getRGB());
                 }
             }
         }
+
+        ImageWriter wr = (ImageWriter) ImageIO.getImageWritersByMIMEType("image/jpeg").next();
+        ImageOutputStream str = ImageIO.createImageOutputStream(new File("samu.jpg"));
+        wr.setOutput(str);
+        wr.write(image);
     }
 }
+
+
