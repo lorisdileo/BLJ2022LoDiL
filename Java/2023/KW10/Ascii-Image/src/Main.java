@@ -5,6 +5,7 @@ public class Main {
 
         function fc = new function();
 
-        fc.aci();
+        //fc.aci();
+        fc.aciCool();
     }
 }
