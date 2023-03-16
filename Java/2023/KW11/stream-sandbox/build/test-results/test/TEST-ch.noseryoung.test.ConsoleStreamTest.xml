@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ch.noseryoung.test.ConsoleStreamTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-16T08:12:19" hostname="DESKTOP-S21D08F" time="0.038">
+  <properties/>
+  <testcase name="test_GetHomeConsole_LatestGeneration()" classname="ch.noseryoung.test.ConsoleStreamTest" time="0.038"/>
+  <system-out><![CDATA[{
+  "name": "Wii U",
+  "otherNames": [],
+  "developer": "Nintendo",
+  "generation": 8,
+  "unitsSoldWorldwide": 13560000,
+  "initialRelease": "2012-11-18",
+  "bestSellingGame": "Mario Kart 8"
+}
+{
+  "name": "Switch",
+  "otherNames": [],
+  "developer": "Nintendo",
+  "generation": 8,
+  "unitsSoldWorldwide": 107650000,
+  "initialRelease": "2017-03-03",
+  "bestSellingGame": "Mario Kart 8 Deluxe"
+}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
