@@ -1,8 +1,10 @@
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 
 public class Main {
     public static void main(String[] args) {
-        ArrayList<Book> books = new ArrayList<Book>();
+        ArrayList books = new ArrayList();
 
         Book book1 = new Book("Harry Potter", 145);
         Book book2 = new Book("Arsène Lupin", 348);
@@ -12,7 +14,15 @@ public class Main {
         books.add(book2);
         books.add(book3);
 
+        Collections.sort(books);
+
         System.out.println(book1.getTitle().compareTo(book2.getTitle()));
 
+
+
+
     }
+
+
+
 }
