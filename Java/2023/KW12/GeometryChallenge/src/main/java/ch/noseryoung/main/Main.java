@@ -6,11 +6,10 @@ public class Main {
 
     SideCreatorService creatorService = new SideCreatorService();
     TriangleManager sm = new TriangleManager(creatorService);
+    
+    sm.getAllTrianglesSortedByLongestSide();
+    sm.getAllTrianglesSortedByLongestSide();
+
     sm.run();
-
-    // todo: print all sorted Triangles
-    // ... = sm.getAllTrianglesSortedByLongestSide();
-    // ... = sm.getAllTrianglesSortedByLongestSide();
-
   }
 }
