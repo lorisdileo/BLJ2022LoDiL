@@ -75,7 +75,7 @@ public class TriangleManager {
      *
      * @return sorted triangle list
      */
-    public ArrayList<Triangle> getAllTrianglesSortedByShortestSide() {
+    public List<Double> getAllTrianglesSortedByShortestSide() {
         double shortestSide = 0;
         List<Double> values = new ArrayList<>();
         for (Triangle tr : triangles) {
@@ -89,7 +89,7 @@ public class TriangleManager {
             values.add(shortestSide);
             Collections.sort(values);
         }
-        return null;
+        return values;
     }
 
     /**
@@ -98,7 +98,7 @@ public class TriangleManager {
      *
      * @return sorted triangle list
      */
-    public ArrayList<Triangle> getAllTrianglesSortedByLongestSide() {
+    public List<Double> getAllTrianglesSortedByLongestSide() {
         double largestSide = 0;
         List<Double> values = new ArrayList<>();
         for (Triangle tr : triangles) {
@@ -112,7 +112,7 @@ public class TriangleManager {
             values.add(largestSide);
             Collections.sort(values);
         }
-        return null;
+        return values;
     }
 
 

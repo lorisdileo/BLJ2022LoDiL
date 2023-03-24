@@ -1,5 +1,5 @@
-ch/noseryoung/main/Main.java
- ch.noseryoung.main.Main
+ch/noseryoung/main/TriangleValidator.java
+ ch.noseryoung.main.TriangleValidator
 ch/noseryoung/main/ShapeSideCreator.java
  ch.noseryoung.main.ShapeSideCreator
 ch/noseryoung/main/Triangle.java
@@ -10,5 +10,5 @@ ch/noseryoung/main/SideCreatorUserService.java
  ch.noseryoung.main.SideCreatorUserService
 ch/noseryoung/main/TriangleManager.java
  ch.noseryoung.main.TriangleManager
-ch/noseryoung/main/TriangleValidator.java
- ch.noseryoung.main.TriangleValidator
+ch/noseryoung/main/Main.java
+ ch.noseryoung.main.Main

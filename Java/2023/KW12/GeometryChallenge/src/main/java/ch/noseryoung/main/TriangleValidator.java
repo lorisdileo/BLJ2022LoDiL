@@ -11,10 +11,12 @@ public class TriangleValidator {
      */
     public boolean isEquilateral(Triangle t) {
 
-        if (t.getA() == t.getB() && t.getB() == t.getC()) {
-            return true;
-        } else {
+        if (t.getA() <= 0 || t.getB() <= 0 || t.getC() <= 0) {
             return false;
+        } else if ((t.getA() + t.getB() < t.getC()) || (t.getA() + t.getC() < t.getB()) || (t.getB() + t.getC() < t.getA())) {
+            return false;
+        } else {
+            return t.getA() == t.getB() && t.getB() == t.getC();
         }
     }
 
@@ -28,7 +30,7 @@ public class TriangleValidator {
     public boolean isIsosceles(Triangle t) {
         if (t.getA() <= 0 || t.getB() <= 0 || t.getC() <= 0) {
             return false;
-        } else if ((t.getA() + t.getB() < t.getC()) || (t.getA() + t.getC() < t.getB()) || (t.getB() + t.getC() < t.getA())) {
+        } else if ((t.getA() + t.getB() < t.getC()) && (t.getA() + t.getC() < t.getB()) || ((t.getB() + t.getA() < t.getC()) && (t.getB() + t.getC() < t.getA())|| (t.getC() + t.getA() < t.getB()) && (t.getC() + t.getB() < t.getA()))){
             return false;
         } else {
             return t.getA() == t.getB() && t.getA() != t.getC() || t.getA() != t.getB() && t.getA() == t.getC() || t.getB() == t.getA() && t.getB() != t.getC() || t.getB() != t.getA() && t.getB() == t.getC() || t.getC() == t.getA() && t.getC() != t.getB() || t.getC() != t.getA() && t.getC() == t.getB();
@@ -42,10 +44,14 @@ public class TriangleValidator {
      * @return true the triangle is scalene, false if not
      */
     public boolean isScalene(Triangle t) {
-        return
-                (!isEquilateral(t) && !isIsosceles(t)) &
-                (t.getA() <= 0 || t.getB() <= 0 || t.getC() <= 0) &
-                ((t.getA() + t.getB() < t.getC()) || (t.getA() + t.getC() < t.getB()) || (t.getB() + t.getC() < t.getA()));
+
+        if (t.getA() <= 0 || t.getB() <= 0 || t.getC() <= 0) {
+            return false;
+        } else if ((t.getA() + t.getB() < t.getC()) && (t.getA() + t.getC() < t.getB()) || ((t.getB() + t.getA() < t.getC()) && (t.getB() + t.getC() < t.getA())|| (t.getC() + t.getA() < t.getB()) && (t.getC() + t.getB() < t.getA()))){
+            return false;
+        } else {
+            return !isEquilateral(t) && !isIsosceles(t);
+        }
     }
 
 }
