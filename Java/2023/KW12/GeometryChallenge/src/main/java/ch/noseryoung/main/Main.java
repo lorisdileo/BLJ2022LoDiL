@@ -4,12 +4,12 @@ public class Main {
 
   public static void main(String[] args) {
 
-    SideCreatorService creatorService = new SideCreatorService();
-    TriangleManager sm = new TriangleManager(creatorService);
-    
-    sm.getAllTrianglesSortedByLongestSide();
-    sm.getAllTrianglesSortedByLongestSide();
+    SideCreatorUserService creatorUserService = new SideCreatorUserService();
+    TriangleManager sm = new TriangleManager(creatorUserService);
 
     sm.run();
+
+    sm.getAllTrianglesSortedByLongestSide();
+    sm.getAllTrianglesSortedByLongestSide();
   }
 }

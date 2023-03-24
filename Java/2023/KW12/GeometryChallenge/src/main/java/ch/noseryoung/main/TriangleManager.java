@@ -20,19 +20,17 @@ public class TriangleManager {
      * and prints the triangle with its information.
      */
     public void run() {
-        Random rand = new Random();
-        int is_running = java.lang.Math.round(rand.nextInt(5) + 2);
+
 
 
         printWelcomeText();
 
-        for (int i = 0; i < is_running; i++) {
+        for (int i = 0; i < 5; i++) {
             Triangle triangle = generateTriangle();
             boolean isEquilateral = triangleValidator.isEquilateral(triangle);
             boolean isIsosceles = triangleValidator.isIsosceles(triangle);
             boolean isScalene = triangleValidator.isScalene(triangle);
 
-            // todo: add a valid Triangle to the triangles list
             triangles.add(triangle);
             printTriangleInfo(triangle, isEquilateral, isIsosceles, isScalene);
         }

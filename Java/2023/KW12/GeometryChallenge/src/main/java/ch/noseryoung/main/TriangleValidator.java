@@ -31,11 +31,7 @@ public class TriangleValidator {
         } else if ((t.getA() + t.getB() < t.getC()) || (t.getA() + t.getC() < t.getB()) || (t.getB() + t.getC() < t.getA())) {
             return false;
         } else {
-            if ((t.getA() == t.getB() || t.getA() == t.getC() || t.getB() == t.getC())) {
-                return true;
-            } else {
-                return false;
-            }
+            return t.getA() == t.getB() && t.getA() != t.getC() || t.getA() != t.getB() && t.getA() == t.getC() || t.getB() == t.getA() && t.getB() != t.getC() || t.getB() != t.getA() && t.getB() == t.getC() || t.getC() == t.getA() && t.getC() != t.getB() || t.getC() != t.getA() && t.getC() == t.getB();
         }
     }
 
