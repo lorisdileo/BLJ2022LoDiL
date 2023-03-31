@@ -6,7 +6,6 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Game {
-    Main main = new Main();
     static int[][] cards = new int[4][4];
     static boolean openCover[][] = new boolean[4][4];
     static Scanner scan = new Scanner(System.in);
@@ -69,7 +68,6 @@ public class Game {
         FileInputStream fis = new FileInputStream("C:\\Users\\loris\\Dokumente\\GitHub\\BLJ2022LoDiL\\Java\\2023\\KW12\\Memory\\src\\german.properties");
         prop.load(fis);
 
-        String value = prop.getProperty("foundItems");
         int noDownCards = 16;
         while (noDownCards > 0) {
             gamingBoard(openCover, cards);

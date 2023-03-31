@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Main {
     static Game gm = new Game();
+
     public static void main(String[] args) throws IOException {
         Scanner scan = new Scanner(System.in);
 
@@ -13,19 +14,24 @@ public class Main {
         System.out.println("- [3]: Italian");
         int langu = scan.nextInt();
 
-        switch (langu){
+        switch (langu) {
             case 1:
-                gm.setupGame();
-                gm.gameEnglish(gm.openCover, gm.cards);
+                while (true) {
+                    gm.setupGame();
+                    gm.gameEnglish(gm.openCover, gm.cards);
+                }
 
             case 2:
-                gm.setupGame();
-                gm.gameGerman(gm.openCover, gm.cards);
+                while (true) {
+                    gm.setupGame();
+                    gm.gameGerman(gm.openCover, gm.cards);
+                }
 
             case 3:
-                gm.setupGame();
-                gm.gameItalian(gm.openCover, gm.cards);
-
+                while (true) {
+                    gm.setupGame();
+                    gm.gameItalian(gm.openCover, gm.cards);
+                }
         }
     }
 }
