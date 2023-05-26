@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Fruit from './component/Fruit';
+import { TextField, Typography } from '@mui/material';
 
 function App() {
 
@@ -36,8 +37,24 @@ function App() {
     }
   ];
 
+  const [input, setInput] = useState<string>("");
+
+    const handleChange = (e : React.ChangeEvent<HTMLInputElement>) : void => {
+      console.log(e.target.value);
+      setInput(e.target.value);
+      //input = e.target.value;
+      console.log(input)
+    }
+
   return (
+
+
     <>
+    <Typography>
+      Hallo {input}
+    </Typography>
+    <TextField onChange={handleChange} label="name: "/>
+
     {/* <Fruit name='Apple'/>
     <Fruit name='Pinapple'/>*/}
     {
