@@ -21,16 +21,18 @@ public class GameIO extends JFrame {
     private final Map<Integer, Runnable> inputMap;
     private final Map<Integer, Color> colorMap;
 
+    private long startTime;
+
     public GameIO(Game game, int scale, double cellMargin) {
         this.game = game;
         this.scale = scale;
         this.cellMargin = cellMargin;
+        this.startTime = System.currentTimeMillis();
 
         inputMap = Map.of(KeyEvent.VK_UP, game::moveUp, KeyEvent.VK_DOWN, game::moveDown,
                 KeyEvent.VK_LEFT, game::moveLeft, KeyEvent.VK_RIGHT, game::moveRight, KeyEvent.VK_ESCAPE,
                 game::escAction);
-        colorMap = Map.of(0, Color.LIGHT_GRAY, 1, Color.BLACK, 2, Color.RED, 3, Color.BLUE, 4,
-                Color.GREEN);
+        colorMap = Map.of(0, Color.LIGHT_GRAY, 1, Color.BLACK, 2, Color.RED, 3, Color.GRAY, 4, Color.ORANGE, 5, Color.BLUE, 6, Color.CYAN);
 
         initInput();
         initOutput();
@@ -54,7 +56,10 @@ public class GameIO extends JFrame {
         this.addKeyListener(new KeyAdapter() {
             @Override
             public void keyPressed(KeyEvent e) {
-                game.hasWon();
+                if (game.hasWon()) {
+                    System.out.println((System.currentTimeMillis() - startTime)/1000 + "s");
+                    startTime = System.currentTimeMillis();
+                }
                 if (inputMap.containsKey(e.getKeyCode())) {
                     inputMap.get(e.getKeyCode()).run();
                     updateOutput();

@@ -1,10 +1,6 @@
-import java.sql.Struct;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
-
-import static java.lang.System.exit;
 
 public class Game {
 
@@ -13,21 +9,19 @@ public class Game {
     int currentX = 0;
     int currentY = 0;
 
-    int oldValue = 0;
-
     public Game() {
         gameField = new int[][]{
-                {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-                {0, 0, 0, 1, 1, 1, 1, 1, 0, 0},
-                {0, 1, 1, 1, 0, 0, 0, 1, 0, 0},
-                {0, 1, 4, 2, 3, 0, 0, 1, 0, 0},
-                {0, 1, 1, 1, 0, 3, 4, 1, 0, 0},
-                {0, 1, 4, 1, 1, 3, 0, 1, 0, 0},
-                {0, 1, 0, 1, 0, 4, 0, 1, 1, 0},
-                {0, 1, 3, 0, 3, 3, 3, 4, 1, 0},
-                {0, 1, 0, 0, 0, 4, 0, 0, 1, 0},
-                {0, 1, 1, 1, 1, 1, 1, 1, 1, 0},
-                {0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+                {6, 5, 5, 5, 6, 5, 5, 6, 5, 5},
+                {5, 5, 6, 1, 1, 1, 1, 1, 5, 6},
+                {6, 1, 1, 1, 0, 0, 0, 1, 5, 5},
+                {5, 1, 4, 2, 3, 0, 0, 1, 6, 5},
+                {5, 1, 1, 1, 0, 3, 4, 1, 5, 5},
+                {6, 1, 4, 1, 1, 3, 0, 1, 5, 6},
+                {5, 1, 0, 1, 0, 4, 0, 1, 1, 5},
+                {5, 1, 3, 0, 3, 3, 3, 4, 1, 5},
+                {6, 1, 0, 0, 0, 4, 0, 0, 1, 6},
+                {5, 1, 1, 1, 1, 1, 1, 1, 1, 5},
+                {5, 5, 6, 5, 5, 6, 5, 5, 6, 5}
         };
 
         for (int i = 0; i < gameField.length; i++) {
@@ -188,13 +182,14 @@ public class Game {
         }
     }
 
-    public void hasWon() {
+    public boolean hasWon() {
 
         boolean allIsGreen = true;
 
         for (int[] greenField : greenFields) {
             if (gameField[greenField[0]][greenField[1]] != 3) {
                 allIsGreen = false;
+                break;
             }
         }
 
@@ -205,8 +200,26 @@ public class Game {
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
-            exit(0);
+
+            gameField = new int[][]{
+                    {6, 5, 5, 5, 6, 5, 5, 6, 5, 5},
+                    {5, 5, 6, 1, 1, 1, 1, 1, 5, 6},
+                    {6, 1, 1, 1, 0, 0, 0, 1, 5, 5},
+                    {5, 1, 4, 2, 3, 0, 0, 1, 6, 5},
+                    {5, 1, 1, 1, 0, 3, 4, 1, 5, 5},
+                    {6, 1, 4, 1, 1, 3, 0, 1, 5, 6},
+                    {5, 1, 0, 1, 0, 4, 0, 1, 1, 5},
+                    {5, 1, 3, 0, 3, 3, 3, 4, 1, 5},
+                    {6, 1, 0, 0, 0, 4, 0, 0, 1, 6},
+                    {5, 1, 1, 1, 1, 1, 1, 1, 1, 5},
+                    {5, 5, 6, 5, 5, 6, 5, 5, 6, 5}
+            };
+
+
+            return true;
         }
+
+        return false;
     }
 
 
@@ -216,10 +229,6 @@ public class Game {
 
     public int[][] getField() {
         return gameField;
-    }
-
-    public List<int[]> getGreenFields() {
-        return greenFields;
     }
 
     public int getColCount() {
