@@ -15,7 +15,10 @@ public class Game {
 
     private List<Point> apples;
 
-    private Direction lastMovingDirection;
+    private Direction lastMovingDirection = Direction.UP;
+
+    private boolean gameStateChanged;
+
 
     public Game(int width, int height, int appleCount) {
         this.gameField = new int[height][width];
@@ -30,18 +33,22 @@ public class Game {
 
     public void moveUp() {
         updateGameState(Direction.UP);
+        gameStateChanged = true;
     }
 
     public void moveDown() {
         updateGameState(Direction.DOWN);
+        gameStateChanged = true;
     }
 
     public void moveLeft() {
         updateGameState(Direction.LEFT);
+        gameStateChanged = true;
     }
 
     public void moveRight() {
         updateGameState(Direction.RIGHT);
+        gameStateChanged = true;
     }
 
     public void escAction() {
@@ -58,6 +65,14 @@ public class Game {
             updateField();
             lastMovingDirection = direction;
         }
+    }
+
+    public boolean hasGameStateChanged() {
+        return gameStateChanged;
+    }
+
+    public void resetGameStateChanged() {
+        gameStateChanged = false;
     }
 
     private void updateField() {
@@ -155,5 +170,13 @@ public class Game {
 
     private boolean isInBounds(Point point) {
         return (0 <= point.x && point.x < getColCount()) && (0 <= point.y && point.y < getRowCount());
+    }
+
+    public Direction getLastMovingDirection() {
+        return lastMovingDirection;
+    }
+
+    public void setLastMovingDirection(Direction lastMovingDirection) {
+        this.lastMovingDirection = lastMovingDirection;
     }
 }

@@ -1,6 +1,7 @@
 package ch.noseryoung.io;
 
 import ch.noseryoung.game.Game;
+import ch.noseryoung.game.SnakeThread;
 
 import javax.swing.*;
 import java.awt.*;
@@ -29,9 +30,13 @@ public class GameIO extends JFrame {
         this.cellMargin = Math.min(cellMargin, 1.0);
         colorMap = Map.of(0, Color.LIGHT_GRAY, 1, Color.YELLOW, 2, Color.GREEN, 3, Color.RED, 4,
                 Color.BLUE);
+
         initInput();
         initOutput();
         updateOutput();
+
+        SnakeThread thread = new SnakeThread(game, this, 350);
+        thread.start();
     }
 
     private void initOutput() {
@@ -59,7 +64,7 @@ public class GameIO extends JFrame {
         });
     }
 
-    private void updateOutput() {
+    public void updateOutput() {
         Graphics2D g2d = (Graphics2D) displayArea.getGraphics();
         for (int col = 0; col < game.getColCount(); col++) {
             for (int row = 0; row < game.getRowCount(); row++) {
