@@ -8,11 +8,11 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class TypeConverterTests {
     private TypeConverter testee;
 
+
     @BeforeEach
     void setUp(){
         testee = new TypeConverter();
     }
-
     /*@Test
     public void convertStringToShort_Loris_inputCorrect_true(){
         String str = "123456789";
@@ -119,6 +119,7 @@ public class TypeConverterTests {
     void convertStringToDouble_SamuelScherrer_StringToConvert_doubleWithApostrophAndOnlyOneDecimal() throws IllegalArgumentException{
         String str = "1'200.5";
         //given
+
 
         double expectedResult = 1200.5;
 

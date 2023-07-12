@@ -7,6 +7,6 @@ public class Main {
         TypeConverter.convertStringToDouble("-7'77,989");
         TypeConverter.StringToCharArray("HJKHdjkfgh");
         TypeConverter.convertStringToLong("-3456");
-        TypeConverter.StringToCharSet("do-nqw-erkl");
+        TypeConverter.StringToCharSet("do-nqwerkl");
     }
 }

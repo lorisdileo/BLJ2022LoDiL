@@ -41,7 +41,7 @@ public class function {
         final int ASCII_WIDTH = 250;
         final int ASCII_HEIGHT = 150;
 
-        final char[] ASCII_CHARS = {'█', '▓', '▒', '░', ' '};
+        final char[] ASCII_CHARS = {'█', '▓', '▒', '░'};
 
 
         BufferedImage image = ImageIO.read(new File("C:\\\\Users\\\\loris\\\\Dokumente\\\\GitHub\\\\BLJ2022LoDiL\\\\Java\\\\2023\\\\KW10\\\\Noised\\\\src\\\\sami.jpg"));
@@ -58,8 +58,8 @@ public class function {
                 int r = (pixel >> 16) & 0xff;
                 int g = (pixel >> 8) & 0xff;
                 int b = pixel & 0xff;
-                int gray = (int) (0.2126 * r + 0.7152 * g + 0.0722 * b);
-                int index = (gray * ASCII_CHARS.length) / 256;
+                int grey = (int) (0.2126 * r + 0.7152 * g + 0.0722 * b);
+                int index = (grey * ASCII_CHARS.length) / 256;
                 asciiArt.append(ASCII_CHARS[index]);
             }
             asciiArt.append("\n");

@@ -82,6 +82,17 @@ public class TriangleValidatorTests {
         boolean result = testee.isIsosceles(triangle);
         assertEquals(expectedResult, result);
     }
+    @Test
+    public void isIsosceles_allSidesAreCero_false(){
+        double side1 = 0;
+        double side2 = 0;
+
+        Triangle triangle = new Triangle(side1, side2, side2);
+        boolean expectedResult = false;
+
+        boolean result = testee.isIsosceles(triangle);
+        assertEquals(expectedResult, result);
+    }
 
     @Test
     public void isIsosceles_twoSidesAreBelow_false(){
@@ -139,6 +150,18 @@ public class TriangleValidatorTests {
         double side1 = 2;
         double side2 = 0;
         double side3 = 5;
+
+        Triangle triangle = new Triangle(side1, side2, side3);
+        boolean expectedResult = false;
+
+        boolean result = testee.isScalene(triangle);
+        assertEquals(expectedResult, result);
+    }
+    @Test
+    public void isScalene_allSideAreCero_false(){
+        double side1 = 0;
+        double side2 = 0;
+        double side3 = 0;
 
         Triangle triangle = new Triangle(side1, side2, side3);
         boolean expectedResult = false;

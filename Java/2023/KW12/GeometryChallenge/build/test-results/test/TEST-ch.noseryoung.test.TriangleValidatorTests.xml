@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ch.noseryoung.test.TriangleValidatorTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-24T12:19:49" hostname="DESKTOP-S21D08F" time="0.052">
+<testsuite name="ch.noseryoung.test.TriangleValidatorTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-29T07:31:20" hostname="DESKTOP-S21D08F" time="0.035">
   <properties/>
-  <testcase name="isIsosceles_twoSidesAreCeroAndOneSideIsBelowCero_false()" classname="ch.noseryoung.test.TriangleValidatorTests" time="0.052"/>
+  <testcase name="isScalene_allSideAreCero_false()" classname="ch.noseryoung.test.TriangleValidatorTests" time="0.035"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

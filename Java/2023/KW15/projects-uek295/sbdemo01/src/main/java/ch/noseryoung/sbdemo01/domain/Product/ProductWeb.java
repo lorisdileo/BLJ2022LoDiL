@@ -1,13 +1,17 @@
 package ch.noseryoung.sbdemo01.domain.Product;
 
+import ch.qos.logback.core.net.AutoFlushingObjectWriter;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.MethodArgumentNotValidException;
+import org.springframework.web.bind.annotation.*;
 
+import javax.persistence.ManyToMany;
+import javax.validation.Valid;
 import java.util.List;
+import java.util.NoSuchElementException;
+import java.util.Set;
 
 @RestController
 public class ProductWeb {
@@ -23,21 +27,31 @@ public class ProductWeb {
     }
 
     @GetMapping("/products/{pruductId}")
-    private ResponseEntity<Product> getProduct(@PathVariable("pruductId") int pruductId){
+    private ResponseEntity<Product> getProduct(@PathVariable("pruductId") int pruductId) throws ProductNotFoundException {
         return ResponseEntity.status(200).body(service.getProductById(pruductId));
     }
 
-    /*@DeleteMapping("/products/{productId}")
-    private void deleteProduct(@PathVariable("poductId") int productId){
-        service.deleteProduct(productId);
-    }*/
+    @PostMapping("/products")
+    public ResponseEntity<Product> createProduct(@Valid @RequestBody Product product) {
+        return ResponseEntity.status(HttpStatus.CREATED).body(service.createProduct(product));
+    }
+
+    @ExceptionHandler(ProductNotFoundException.class)
+    public ResponseEntity<String> handlePrdouctNotFoundException(ProductNotFoundException pnfe){
+        return ResponseEntity.status(HttpStatus.NOT_FOUND).body(pnfe.getMessage());
+    }
+
+    @ExceptionHandler(MethodArgumentNotValidException.class)
+    public ResponseEntity<String> handleMethodArgumentNotValidException(MethodArgumentNotValidException manv){
+        return ResponseEntity.status(400).body(manv.getFieldError().getDefaultMessage());
+    }
 
 
-    /*@GetMapping("/say/{requestedText}")
+    @GetMapping("/say/{requestedText}")
     public ResponseEntity<String> say
             (@PathVariable("requestedText") String requestedTExt){
         return ResponseEntity.ok().body(requestedTExt);
-    }*/
+    }
 }
 
 

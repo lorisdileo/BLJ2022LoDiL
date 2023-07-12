@@ -23,7 +23,11 @@ public class ProductService {
         prRepo.deleteById(productId);
     }*/
 
-    public Product getProductById(int productId){
-        return prRepo.findById(productId).get();
+    public Product getProductById(int productId) throws ProductNotFoundException {
+        return prRepo.findById(productId).orElseThrow(() -> new ProductNotFoundException("Could not find Product with specified id"));
+    }
+
+    public Product createProduct(Product product){
+        return prRepo.save(product);
     }
 }

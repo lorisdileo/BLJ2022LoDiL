@@ -1,10 +1,7 @@
 import javax.imageio.ImageIO;
 import javax.swing.*;
-import java.awt.*;
 import java.awt.image.BufferedImage;
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.net.*;
 import java.nio.charset.StandardCharsets;
 import java.util.Scanner;
@@ -32,7 +29,6 @@ public class Main {
                 System.out.println("Quote: " + quote);
                 URL url = new URL("https://cataas.com/cat/says/" + URLEncoder.encode(quote, StandardCharsets.UTF_8).replace("+", "%20"));
 
-
                 BufferedImage image = ImageIO.read(url);
 
 
@@ -44,7 +40,5 @@ public class Main {
                 rahmen.setVisible(true);
             }
         }
-
-
     }
 }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TypeConverterTests" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-03-30T11:58:10" hostname="DESKTOP-S21D08F" time="0.042">
+<testsuite name="TypeConverterTests" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-03-30T12:51:22" hostname="DESKTOP-S21D08F" time="0.04">
   <properties/>
-  <testcase name="convertStringToDouble_SamuelScherrer_StringToConvert_negativeDoubleWithUnderscoreAndOnlyOneDecimal()" classname="TypeConverterTests" time="0.042">
+  <testcase name="convertStringToDouble_SamuelScherrer_StringToConvert_negativeDoubleWithUnderscoreAndOnlyOneDecimal()" classname="TypeConverterTests" time="0.04">
     <failure message="org.opentest4j.AssertionFailedError: expected: &lt;-5000.5&gt; but was: &lt;0.0&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;-5000.5&gt; but was: &lt;0.0&gt;
 	at app//org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
 	at app//org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)

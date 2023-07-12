@@ -13,7 +13,7 @@ public class TriangleValidator {
 
         if (t.getA() <= 0 || t.getB() <= 0 || t.getC() <= 0) {
             return false;
-        } else if ((t.getA() + t.getB() < t.getC()) || (t.getA() + t.getC() < t.getB()) || (t.getB() + t.getC() < t.getA())) {
+        } else if ((t.getA() + t.getB() < t.getC()) && (t.getA() + t.getC() < t.getB()) || ((t.getB() + t.getA() < t.getC()) && (t.getB() + t.getC() < t.getA())|| (t.getC() + t.getA() < t.getB()) && (t.getC() + t.getB() < t.getA()))) {
             return false;
         } else {
             return t.getA() == t.getB() && t.getB() == t.getC();
