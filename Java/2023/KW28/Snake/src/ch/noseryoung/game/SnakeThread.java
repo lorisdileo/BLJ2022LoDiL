@@ -17,7 +17,6 @@ public class SnakeThread extends Thread {
     @Override
     public void run() {
         while(true) {
-            // Move snake in random direction
             Direction direction = game.getLastMovingDirection();
             switch (direction) {
                 case UP -> game.moveUp();
@@ -28,12 +27,10 @@ public class SnakeThread extends Thread {
 
             gameIO.updateOutput();
 
-            // Check if game is over
             if (game.handleLoss() || game.handleWin()) {
                 break;
             }
 
-            // Delay
             try {
                 Thread.sleep(delay);
             } catch (InterruptedException e) {
